@@ -18,9 +18,16 @@ import { DtEmptyStateModule } from '@dynatrace/barista-components/empty-state';
 import { DtIconModule } from '@dynatrace/barista-components/icon';
 import { DtButtonModule } from '@dynatrace/barista-components/button';
 import { DtCardModule } from '@dynatrace/barista-components/card';
+import { DtTableModule } from '@dynatrace/barista-components/table';
 import { DtExampleEmptyStateMultipleItems } from './empty-state-multiple-items-example/empty-state-multiple-items-example';
 @NgModule({
-    imports: [DtEmptyStateModule, DtIconModule, DtButtonModule, DtCardModule],
+    imports: [
+        DtEmptyStateModule,
+        DtIconModule,
+        DtButtonModule,
+        DtCardModule,
+        DtTableModule,
+    ],
     declarations: [DtExampleEmptyStateMultipleItems],
     exports: [DtExampleEmptyStateMultipleItems],
 })

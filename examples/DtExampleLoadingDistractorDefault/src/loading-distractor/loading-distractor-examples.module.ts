@@ -17,7 +17,7 @@ import { NgModule } from '@angular/core';
 import { DtLoadingDistractorModule } from '@dynatrace/barista-components/loading-distractor';
 import { DtFormFieldModule } from '@dynatrace/barista-components/form-field';
 import { DtExampleLoadingDistractorDefault } from './loading-distractor-default-example/loading-distractor-default-example';
-import { DtInputModule } from 'components/input/src/input-module';
+import { DtInputModule } from '@dynatrace/barista-components/input';
 @NgModule({
     imports: [DtLoadingDistractorModule, DtFormFieldModule, DtInputModule],
     declarations: [DtExampleLoadingDistractorDefault],
