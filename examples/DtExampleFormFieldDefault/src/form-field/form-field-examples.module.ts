@@ -22,6 +22,8 @@ import { DtIconModule } from '@dynatrace/barista-components/icon';
 import { DtLoadingDistractorModule } from '@dynatrace/barista-components/loading-distractor';
 import { DtButtonModule } from '@dynatrace/barista-components/button';
 import { DtExampleFormFieldDefault } from './form-field-default-example/form-field-default-example';
+import { DtAlertModule } from '@dynatrace/barista-components/alert';
+import { DtThemingModule } from '@dynatrace/barista-components/theming';
 @NgModule({
     imports: [
         CommonModule,
@@ -32,6 +34,8 @@ import { DtExampleFormFieldDefault } from './form-field-default-example/form-fie
         DtInputModule,
         DtIconModule,
         DtLoadingDistractorModule,
+        DtAlertModule,
+        DtThemingModule,
     ],
     declarations: [DtExampleFormFieldDefault],
     exports: [DtExampleFormFieldDefault],

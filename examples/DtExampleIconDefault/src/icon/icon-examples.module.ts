@@ -18,9 +18,10 @@ import { CommonModule } from '@angular/common';
 import { DtIconModule } from '@dynatrace/barista-components/icon';
 import { DtInputModule } from '@dynatrace/barista-components/input';
 import { DtExampleIconDefault } from './icon-default-example/icon-default-example';
+import { DtIconAsync } from './async-icon';
 @NgModule({
     imports: [CommonModule, DtInputModule, DtIconModule],
-    declarations: [DtExampleIconDefault, DtExampleIconAsync],
+    declarations: [DtExampleIconDefault, DtIconAsync],
     exports: [DtExampleIconDefault],
 })
 export class DtIconExamplesModule {

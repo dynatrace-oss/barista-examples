@@ -22,6 +22,8 @@ import { DtIconModule } from '@dynatrace/barista-components/icon';
 import { DtLoadingDistractorModule } from '@dynatrace/barista-components/loading-distractor';
 import { DtButtonModule } from '@dynatrace/barista-components/button';
 import { DtExampleFormFieldErrorCustomValidator } from './form-field-error-custom-validator-example/form-field-error-custom-validator-example';
+import { DtAlertModule } from '@dynatrace/barista-components/alert';
+import { DtThemingModule } from '@dynatrace/barista-components/theming';
 @NgModule({
     imports: [
         CommonModule,
@@ -32,6 +34,8 @@ import { DtExampleFormFieldErrorCustomValidator } from './form-field-error-custo
         DtInputModule,
         DtIconModule,
         DtLoadingDistractorModule,
+        DtAlertModule,
+        DtThemingModule,
     ],
     declarations: [DtExampleFormFieldErrorCustomValidator],
     exports: [DtExampleFormFieldErrorCustomValidator],
