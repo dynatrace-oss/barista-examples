@@ -16,8 +16,8 @@
 import { NgModule } from '@angular/core';
 import { DtButtonModule } from '@dynatrace/barista-components/button';
 import { DtIconModule } from '@dynatrace/barista-components/icon';
-import { DtThemingModule } from '@dynatrace/barista-components/theming';
 import { DtLoadingDistractorModule } from '@dynatrace/barista-components/loading-distractor';
+import { DtThemingModule } from '@dynatrace/barista-components/theming';
 import { DtExampleButtonVariant } from './button-variant-example/button-variant-example';
 @NgModule({
     imports: [
@@ -26,8 +26,17 @@ import { DtExampleButtonVariant } from './button-variant-example/button-variant-
         DtThemingModule,
         DtLoadingDistractorModule,
     ],
-    declarations: [DtExampleButtonVariant],
-    exports: [DtExampleButtonVariant],
+    declarations: [
+        DtExampleButtonColor,
+        DtExampleButtonDark,
+        DtExampleButtonDefault,
+        DtExampleButtonDisabled,
+        DtExampleButtonIconOnly,
+        DtExampleButtonIcons,
+        DtExampleButtonInteraction,
+        DtExampleButtonLoadingSpinner,
+        DtExampleButtonVariant,
+    ],
 })
 export class DtButtonExamplesModule {
 }

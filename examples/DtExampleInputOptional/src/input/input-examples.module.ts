@@ -14,29 +14,22 @@
  * limitations under the License.
  */
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { DtButtonModule } from '@dynatrace/barista-components/button';
-import { DtIconModule } from '@dynatrace/barista-components/icon';
-import { DtLoadingDistractorModule } from '@dynatrace/barista-components/loading-distractor';
+import { DtInputModule } from '@dynatrace/barista-components/input';
+import { DtFormFieldModule } from '@dynatrace/barista-components/form-field';
 import { DtThemingModule } from '@dynatrace/barista-components/theming';
-import { DtExampleButtonColor } from './button-color-example/button-color-example';
+import { DtExampleInputOptional } from './input-optional-example/input-optional-example';
 @NgModule({
     imports: [
+        FormsModule,
         DtButtonModule,
-        DtIconModule,
+        DtInputModule,
+        DtFormFieldModule,
         DtThemingModule,
-        DtLoadingDistractorModule,
     ],
-    declarations: [
-        DtExampleButtonColor,
-        DtExampleButtonDark,
-        DtExampleButtonDefault,
-        DtExampleButtonDisabled,
-        DtExampleButtonIconOnly,
-        DtExampleButtonIcons,
-        DtExampleButtonInteraction,
-        DtExampleButtonLoadingSpinner,
-        DtExampleButtonVariant,
-    ],
+    declarations: [DtExampleInputOptional],
+    exports: [DtExampleInputOptional],
 })
-export class DtButtonExamplesModule {
+export class DtInputExamplesModule {
 }
