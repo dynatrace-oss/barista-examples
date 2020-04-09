@@ -177,6 +177,7 @@
     "DtExampleMicroChartStream",
     "DtExampleOverlayComplexContent",
     "DtExampleOverlayDefault",
+    "DtExampleOverlayFullscreen",
     "DtExampleOverlayImplicitContext",
     "DtExampleOverlayProgrammatic",
     "DtExampleOverlayTile",
