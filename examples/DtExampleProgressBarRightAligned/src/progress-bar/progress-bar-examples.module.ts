@@ -17,6 +17,7 @@ import { NgModule } from '@angular/core';
 import { DtProgressBarModule } from '@dynatrace/barista-components/progress-bar';
 import { CommonModule } from '@angular/common';
 import { DtButtonModule } from '@dynatrace/barista-components/button';
+import { DtIndicatorModule } from '@dynatrace/barista-components/indicator';
 import { DtThemingModule } from '@dynatrace/barista-components/theming';
 import { DtButtonGroupModule } from '@dynatrace/barista-components/button-group';
 import { DtExampleProgressBarRightAligned } from './progress-bar-right-aligned-example/progress-bar-right-aligned-example';
@@ -26,6 +27,7 @@ import { DtExampleProgressBarRightAligned } from './progress-bar-right-aligned-e
         DtButtonModule,
         DtProgressBarModule,
         DtThemingModule,
+        DtIndicatorModule,
         DtButtonGroupModule,
     ],
     declarations: [DtExampleProgressBarRightAligned],

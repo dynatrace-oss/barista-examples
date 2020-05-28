@@ -22,6 +22,7 @@ import { DtChartSeries } from '@dynatrace/barista-components/chart';
 import { DtColors } from '@dynatrace/barista-components/theming';
 
 import { generateData } from '../chart-data-utils';
+import { SeriesLineOptions } from 'highcharts';
 
 @Component({
   selector: 'dt-example-chart-loading',
@@ -34,7 +35,7 @@ export class DtExampleChartLoading {
     },
     yAxis: [
       {
-        title: null,
+        title: undefined,
         labels: {
           format: '{value}',
         },
@@ -46,7 +47,7 @@ export class DtExampleChartLoading {
   series: DtChartSeries[] | null;
 
   toggleData(): void {
-    const dummyData = [
+    const dummyData: SeriesLineOptions[] = [
       {
         name: 'Failure rate',
         type: 'line',

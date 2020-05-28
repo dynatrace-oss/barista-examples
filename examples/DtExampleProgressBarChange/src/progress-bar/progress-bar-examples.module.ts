@@ -17,6 +17,7 @@ import { NgModule } from '@angular/core';
 import { DtProgressBarModule } from '@dynatrace/barista-components/progress-bar';
 import { CommonModule } from '@angular/common';
 import { DtButtonModule } from '@dynatrace/barista-components/button';
+import { DtIndicatorModule } from '@dynatrace/barista-components/indicator';
 import { DtThemingModule } from '@dynatrace/barista-components/theming';
 import { DtButtonGroupModule } from '@dynatrace/barista-components/button-group';
 import { DtExampleProgressBarChange } from './progress-bar-change-example/progress-bar-change-example';
@@ -26,6 +27,7 @@ import { DtExampleProgressBarChange } from './progress-bar-change-example/progre
         DtButtonModule,
         DtProgressBarModule,
         DtThemingModule,
+        DtIndicatorModule,
         DtButtonGroupModule,
     ],
     declarations: [DtExampleProgressBarChange],

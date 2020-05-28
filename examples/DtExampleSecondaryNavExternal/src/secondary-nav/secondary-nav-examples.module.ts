@@ -33,5 +33,5 @@ import { RouterModule } from '@angular/router';
     declarations: [DtExampleSecondaryNavExternal],
     exports: [DtExampleSecondaryNavExternal],
 })
-export class DtExamplesSecondaryNAvModule {
+export class DtExamplesSecondaryNavModule {
 }

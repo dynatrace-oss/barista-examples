@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DtIconModule } from '@dynatrace/barista-components/icon';
 import { HttpClientModule } from '@angular/common/http';
-import { DtExamplesSecondaryNAvModule } from '../secondary-nav/secondary-nav-examples.module';
+import { DtExamplesSecondaryNavModule } from '../secondary-nav/secondary-nav-examples.module';
 
 @NgModule({
   imports: [
@@ -16,7 +16,7 @@ import { DtExamplesSecondaryNAvModule } from '../secondary-nav/secondary-nav-exa
     DtIconModule.forRoot({
       svgIconLocation: `https://unpkg.com/@dynatrace/barista-icons/{{name}}.svg`,
     }),
-    DtExamplesSecondaryNAvModule
+    DtExamplesSecondaryNavModule
   ],
   declarations: [ AppComponent, ],
   bootstrap:    [ AppComponent ]
