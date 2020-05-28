@@ -20,8 +20,10 @@ import { CommonModule } from '@angular/common';
 import { DtExampleTabsDefault } from './tabs-default-example/tabs-default-example';
 @NgModule({
     imports: [DtTabsModule, DtButtonModule, CommonModule],
-    declarations: [DtExampleTabsDefault],
-    exports: [DtExampleTabsDefault],
+    declarations: [
+        DtExampleTabsDefault,
+    ],
+    exports: [DtExampleTabsDefault]
 })
 export class DtExamplesTabsModule {
 }

@@ -20,8 +20,10 @@ import { DtThemingModule } from '@dynatrace/barista-components/theming';
 import { DtExampleCheckboxIndeterminate } from './checkbox-indeterminate-example/checkbox-indeterminate-example';
 @NgModule({
     imports: [CommonModule, DtThemingModule, DtCheckboxModule],
-    declarations: [DtExampleCheckboxIndeterminate],
-    exports: [DtExampleCheckboxIndeterminate],
+    declarations: [
+        DtExampleCheckboxIndeterminate,
+    ],
+    exports: [DtExampleCheckboxIndeterminate]
 })
 export class DtCheckboxExamplesModule {
 }

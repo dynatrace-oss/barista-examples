@@ -26,8 +26,10 @@ import { CommonModule } from '@angular/common';
         DtTopBarNavigationModule,
         DtDrawerModule,
     ],
-    declarations: [DtExampleTopBarNavigationDefault],
-    exports: [DtExampleTopBarNavigationDefault],
+    declarations: [
+        DtExampleTopBarNavigationDefault,
+    ],
+    exports: [DtExampleTopBarNavigationDefault]
 })
 export class DtExamplesTopBarNavigationModule {
 }

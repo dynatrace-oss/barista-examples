@@ -28,8 +28,10 @@ import { DtExampleInputDisabledReadonly } from './input-disabled-readonly-exampl
         DtFormFieldModule,
         DtThemingModule,
     ],
-    declarations: [DtExampleInputDisabledReadonly],
-    exports: [DtExampleInputDisabledReadonly],
+    declarations: [
+        DtExampleInputDisabledReadonly,
+    ],
+    exports: [DtExampleInputDisabledReadonly]
 })
 export class DtInputExamplesModule {
 }

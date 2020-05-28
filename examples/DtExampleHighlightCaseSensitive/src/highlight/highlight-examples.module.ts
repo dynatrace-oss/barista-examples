@@ -20,7 +20,7 @@ import { DtExampleHighlightCaseSensitive } from './highlight-case-sensitive-exam
 @NgModule({
     imports: [DtInputModule, DtHighlightModule],
     declarations: [DtExampleHighlightCaseSensitive],
-    exports: [DtExampleHighlightCaseSensitive],
+    exports: [DtExampleHighlightCaseSensitive]
 })
 export class DtHighlightExamplesModule {
 }

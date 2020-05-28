@@ -26,8 +26,10 @@ import { DtExampleBarIndicatorDynamic } from './bar-indicator-dynamic-example/ba
         DtButtonGroupModule,
         DtTableModule,
     ],
-    declarations: [DtExampleBarIndicatorDynamic],
-    exports: [DtExampleBarIndicatorDynamic],
+    declarations: [
+        DtExampleBarIndicatorDynamic,
+    ],
+    exports: [DtExampleBarIndicatorDynamic]
 })
 export class DtBarIndicatorExamplesModule {
 }

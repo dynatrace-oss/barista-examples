@@ -26,8 +26,10 @@ import { DtExampleMenuWithinDrawer } from './menu-within-drawer-example/menu-wit
         DtDrawerModule,
         DtCheckboxModule,
     ],
-    declarations: [DtExampleMenuWithinDrawer],
-    exports: [DtExampleMenuWithinDrawer],
+    declarations: [
+        DtExampleMenuWithinDrawer,
+    ],
+    exports: [DtExampleMenuWithinDrawer]
 })
 export class DtMenuExamplesModule {
 }

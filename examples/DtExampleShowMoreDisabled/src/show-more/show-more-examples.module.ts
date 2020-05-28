@@ -28,8 +28,10 @@ import { DtThemingModule } from '@dynatrace/barista-components/theming';
         DtExpandablePanelModule,
         DtThemingModule,
     ],
-    declarations: [DtExampleShowMoreDisabled],
-    exports: [DtExampleShowMoreDisabled],
+    declarations: [
+        DtExampleShowMoreDisabled,
+    ],
+    exports: [DtExampleShowMoreDisabled]
 })
 export class DtExamplesShowMoreModule {
 }

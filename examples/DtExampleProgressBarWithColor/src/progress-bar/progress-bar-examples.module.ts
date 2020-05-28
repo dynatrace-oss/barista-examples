@@ -30,8 +30,10 @@ import { DtExampleProgressBarWithColor } from './progress-bar-with-color-example
         DtIndicatorModule,
         DtButtonGroupModule,
     ],
-    declarations: [DtExampleProgressBarWithColor],
-    exports: [DtExampleProgressBarWithColor],
+    declarations: [
+        DtExampleProgressBarWithColor,
+    ],
+    exports: [DtExampleProgressBarWithColor]
 })
 export class DtProgressBarExamplesModule {
 }

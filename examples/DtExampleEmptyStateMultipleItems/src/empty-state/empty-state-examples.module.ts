@@ -28,8 +28,10 @@ import { DtExampleEmptyStateMultipleItems } from './empty-state-multiple-items-e
         DtCardModule,
         DtTableModule,
     ],
-    declarations: [DtExampleEmptyStateMultipleItems],
-    exports: [DtExampleEmptyStateMultipleItems],
+    declarations: [
+        DtExampleEmptyStateMultipleItems,
+    ],
+    exports: [DtExampleEmptyStateMultipleItems]
 })
 export class DtEmptyStateExamplesModule {
 }

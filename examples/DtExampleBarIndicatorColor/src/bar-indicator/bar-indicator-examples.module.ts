@@ -26,8 +26,10 @@ import { DtExampleBarIndicatorColor } from './bar-indicator-color-example/bar-in
         DtButtonGroupModule,
         DtTableModule,
     ],
-    declarations: [DtExampleBarIndicatorColor],
-    exports: [DtExampleBarIndicatorColor],
+    declarations: [
+        DtExampleBarIndicatorColor,
+    ],
+    exports: [DtExampleBarIndicatorColor]
 })
 export class DtBarIndicatorExamplesModule {
 }

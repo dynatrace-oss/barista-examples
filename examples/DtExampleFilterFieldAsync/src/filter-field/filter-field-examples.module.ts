@@ -19,8 +19,10 @@ import { DtInputModule } from '@dynatrace/barista-components/input';
 import { DtExampleFilterFieldAsync } from './filter-field-async-example/filter-field-async-example';
 @NgModule({
     imports: [DtFilterFieldModule, DtInputModule],
-    declarations: [DtExampleFilterFieldAsync],
-    exports: [DtExampleFilterFieldAsync],
+    declarations: [
+        DtExampleFilterFieldAsync,
+    ],
+    exports: [DtExampleFilterFieldAsync]
 })
 export class DtFilterFieldExamplesModule {
 }

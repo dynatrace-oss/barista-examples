@@ -18,8 +18,10 @@ import { DtContainerBreakpointObserverModule } from '@dynatrace/barista-componen
 import { DtExampleContainerBreakpointObserverDefault } from './container-breakpoint-observer-default-example/container-breakpoint-observer-default-example';
 @NgModule({
     imports: [DtContainerBreakpointObserverModule],
-    declarations: [DtExampleContainerBreakpointObserverDefault],
-    exports: [DtExampleContainerBreakpointObserverDefault],
+    declarations: [
+        DtExampleContainerBreakpointObserverDefault,
+    ],
+    exports: [DtExampleContainerBreakpointObserverDefault]
 })
 export class DtContainerBreakpointObserverExamplesModule {
 }

@@ -30,26 +30,10 @@ import { DtExampleChartPie } from './chart-pie-example/chart-pie-example';
         DtButtonGroupModule,
     ],
     declarations: [
-        DtExampleChartArea,
-        DtExampleChartAreaRange,
-        DtExampleChartBar,
-        DtExampleChartBehaviorSwitch,
-        DtExampleChartCategorized,
-        DtExampleChartDefault,
-        DtExampleChartDonut,
-        DtExampleChartHeatfield,
-        DtExampleChartHeatfieldMultiple,
-        DtExampleChartLine,
-        DtExampleChartLineWithGaps,
-        DtExampleChartLoading,
-        DtExampleChartMinMax,
-        DtExampleChartOrderedColors,
         DtExampleChartPie,
-        DtExampleChartSelectionAreaDefault,
-        DtExampleChartSinglePointData,
-        DtExampleChartStream,
     ],
     providers: [DtChartExampleDataService],
+    exports: [DtExampleChartPie]
 })
 export class DtChartExamplesModule {
 }

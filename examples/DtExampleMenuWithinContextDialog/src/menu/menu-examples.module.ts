@@ -26,8 +26,10 @@ import { DtExampleMenuWithinContextDialog } from './menu-within-context-dialog-e
         DtDrawerModule,
         DtCheckboxModule,
     ],
-    declarations: [DtExampleMenuWithinContextDialog],
-    exports: [DtExampleMenuWithinContextDialog],
+    declarations: [
+        DtExampleMenuWithinContextDialog,
+    ],
+    exports: [DtExampleMenuWithinContextDialog]
 })
 export class DtMenuExamplesModule {
 }

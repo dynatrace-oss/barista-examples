@@ -20,7 +20,7 @@ import { NgModule } from '@angular/core';
 @NgModule({
     imports: [DtDrawerTableModule, DtTableModule],
     declarations: [DtExampleDrawerTableDefault],
-    exports: [DtExampleDrawerTableDefault],
+    exports: [DtExampleDrawerTableDefault]
 })
 export class DtDrawerTableExamplesModule {
 }

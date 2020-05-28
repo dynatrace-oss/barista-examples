@@ -19,8 +19,10 @@ import { DtFormattersModule } from '@dynatrace/barista-components/formatters';
 import { DtExampleMicroChartStream } from './micro-chart-stream-example/micro-chart-stream-example';
 @NgModule({
     imports: [DtMicroChartModule, DtFormattersModule],
-    declarations: [DtExampleMicroChartStream],
-    exports: [DtExampleMicroChartStream],
+    declarations: [
+        DtExampleMicroChartStream,
+    ],
+    exports: [DtExampleMicroChartStream]
 })
 export class DtMicroChartExamplesModule {
 }

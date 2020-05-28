@@ -30,8 +30,10 @@ import { DtExampleContextDialogCustomIcon } from './context-dialog-custom-icon-e
         DtIconModule,
         DtThemingModule,
     ],
-    declarations: [DtExampleContextDialogCustomIcon],
-    exports: [DtExampleContextDialogCustomIcon],
+    declarations: [
+        DtExampleContextDialogCustomIcon,
+    ],
+    exports: [DtExampleContextDialogCustomIcon]
 })
 export class DtContextDialogExamplesModule {
 }

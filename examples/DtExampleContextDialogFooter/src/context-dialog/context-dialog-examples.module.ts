@@ -30,8 +30,10 @@ import { DtExampleContextDialogFooter } from './context-dialog-footer-example/co
         DtIconModule,
         DtThemingModule,
     ],
-    declarations: [DtExampleContextDialogFooter],
-    exports: [DtExampleContextDialogFooter],
+    declarations: [
+        DtExampleContextDialogFooter,
+    ],
+    exports: [DtExampleContextDialogFooter]
 })
 export class DtContextDialogExamplesModule {
 }

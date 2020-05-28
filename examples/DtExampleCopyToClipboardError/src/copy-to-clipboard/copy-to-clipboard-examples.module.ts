@@ -30,8 +30,10 @@ import { DtExampleCopyToClipboardError } from './copy-to-clipboard-error-example
         DtContextDialogModule,
         DtThemingModule,
     ],
-    declarations: [DtExampleCopyToClipboardError],
-    exports: [DtExampleCopyToClipboardError],
+    declarations: [
+        DtExampleCopyToClipboardError,
+    ],
+    exports: [DtExampleCopyToClipboardError]
 })
 export class DtCopyToClipboardExamplesModule {
 }

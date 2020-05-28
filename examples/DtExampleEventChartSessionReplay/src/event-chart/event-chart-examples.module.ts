@@ -26,8 +26,10 @@ import { DtExampleEventChartSessionReplay } from './event-chart-session-replay-e
         DtKeyValueListModule,
         DtButtonModule,
     ],
-    declarations: [DtExampleEventChartSessionReplay],
-    exports: [DtExampleEventChartSessionReplay],
+    declarations: [
+        DtExampleEventChartSessionReplay,
+    ],
+    exports: [DtExampleEventChartSessionReplay]
 })
 export class DtEventChartExamplesModule {
 }

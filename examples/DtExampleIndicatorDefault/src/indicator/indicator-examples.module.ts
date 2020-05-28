@@ -20,6 +20,7 @@ import { DtExampleIndicatorDefault } from './indicator-default-example/indicator
 @NgModule({
     imports: [DtIndicatorModule, DtButtonModule],
     declarations: [DtExampleIndicatorDefault],
+    exports: [DtExampleIndicatorDefault]
 })
 export class DtIndicatorExamplesModule {
 }

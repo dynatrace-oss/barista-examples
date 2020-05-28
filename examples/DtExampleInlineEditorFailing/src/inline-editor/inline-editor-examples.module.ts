@@ -25,8 +25,11 @@ import { DtExampleInlineEditorFailing } from './inline-editor-failing-example/in
         FormsModule,
         ReactiveFormsModule,
     ],
-    declarations: [DtExampleInlineEditorFailing],
-    exports: [DtExampleInlineEditorFailing],
+    declarations: [
+        DtExampleInlineEditorFailing,
+        DtExampleInlineEditorFailing,
+    ],
+    exports: [DtExampleInlineEditorFailing]
 })
 export class DtInlineEditorExamplesModule {
 }

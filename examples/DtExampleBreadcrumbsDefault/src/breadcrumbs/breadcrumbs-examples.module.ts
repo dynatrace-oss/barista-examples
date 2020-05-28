@@ -26,8 +26,10 @@ import { DtExampleBreadcrumbsDefault } from './breadcrumbs-default-example/bread
         DtButtonGroupModule,
         DtThemingModule,
     ],
-    declarations: [DtExampleBreadcrumbsDefault],
-    exports: [DtExampleBreadcrumbsDefault],
+    declarations: [
+        DtExampleBreadcrumbsDefault,
+    ],
+    exports: [DtExampleBreadcrumbsDefault]
 })
 export class DtBreadcrumbsExamplesModule {
 }

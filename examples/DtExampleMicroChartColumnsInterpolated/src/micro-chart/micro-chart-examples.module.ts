@@ -19,8 +19,10 @@ import { DtFormattersModule } from '@dynatrace/barista-components/formatters';
 import { DtExampleMicroChartColumnsInterpolated } from './micro-chart-columns-interpolated-example/micro-chart-columns-interpolated-example';
 @NgModule({
     imports: [DtMicroChartModule, DtFormattersModule],
-    declarations: [DtExampleMicroChartColumnsInterpolated],
-    exports: [DtExampleMicroChartColumnsInterpolated],
+    declarations: [
+        DtExampleMicroChartColumnsInterpolated,
+    ],
+    exports: [DtExampleMicroChartColumnsInterpolated]
 })
 export class DtMicroChartExamplesModule {
 }

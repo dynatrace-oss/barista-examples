@@ -26,8 +26,10 @@ import { DtExampleMenuDefault } from './menu-default-example/menu-default-exampl
         DtDrawerModule,
         DtCheckboxModule,
     ],
-    declarations: [DtExampleMenuDefault],
-    exports: [DtExampleMenuDefault],
+    declarations: [
+        DtExampleMenuDefault,
+    ],
+    exports: [DtExampleMenuDefault]
 })
 export class DtMenuExamplesModule {
 }

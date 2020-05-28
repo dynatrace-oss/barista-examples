@@ -28,8 +28,10 @@ import { DtExampleDrawerNested } from './drawer-nested-example/drawer-nested-exa
         DtSelectModule,
         DtFormFieldModule,
     ],
-    declarations: [DtExampleDrawerNested],
-    exports: [DtExampleDrawerNested],
+    declarations: [
+        DtExampleDrawerNested,
+    ],
+    exports: [DtExampleDrawerNested]
 })
 export class DtDrawerExamplesModule {
 }

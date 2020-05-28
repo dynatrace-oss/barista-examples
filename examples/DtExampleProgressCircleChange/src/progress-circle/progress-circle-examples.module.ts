@@ -28,8 +28,10 @@ import { DtExampleProgressCircleChange } from './progress-circle-change-example/
         DtButtonGroupModule,
         DtIconModule,
     ],
-    declarations: [DtExampleProgressCircleChange],
-    exports: [DtExampleProgressCircleChange],
+    declarations: [
+        DtExampleProgressCircleChange,
+    ],
+    exports: [DtExampleProgressCircleChange]
 })
 export class DtProgressCircleExamplesModule {
 }

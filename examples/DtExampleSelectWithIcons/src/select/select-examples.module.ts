@@ -32,8 +32,10 @@ import { DtExampleSelectWithIcons } from './select-with-icons-example/select-wit
         FormsModule,
         DtCheckboxModule,
     ],
-    declarations: [DtExampleSelectWithIcons],
-    exports: [DtExampleSelectWithIcons],
+    declarations: [
+        DtExampleSelectWithIcons,
+    ],
+    exports: [DtExampleSelectWithIcons]
 })
 export class DtExamplesSelectModule {
 }

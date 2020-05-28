@@ -20,8 +20,10 @@ import { CommonModule } from '@angular/common';
 import { DtExampleTagRemovable } from './tag-removable-example/tag-removable-example';
 @NgModule({
     imports: [DtTagModule, DtButtonModule, CommonModule],
-    declarations: [DtExampleTagRemovable],
-    exports: [DtExampleTagRemovable],
+    declarations: [
+        DtExampleTagRemovable,
+    ],
+    exports: [DtExampleTagRemovable]
 })
 export class DtExamplesTagModule {
 }

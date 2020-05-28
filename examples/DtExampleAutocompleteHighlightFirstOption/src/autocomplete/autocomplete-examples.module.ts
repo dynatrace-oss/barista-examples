@@ -29,8 +29,10 @@ import { DtExampleAutocompleteHighlightFirstOption } from './autocomplete-highli
         DtInputModule,
         DtFormFieldModule,
     ],
-    declarations: [DtExampleAutocompleteHighlightFirstOption],
-    exports: [DtExampleAutocompleteHighlightFirstOption],
+    declarations: [
+        DtExampleAutocompleteHighlightFirstOption,
+    ],
+    exports: [DtExampleAutocompleteHighlightFirstOption]
 })
 export class DtAutocompleteExamplesModule {
 }

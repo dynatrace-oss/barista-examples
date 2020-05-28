@@ -27,16 +27,9 @@ import { DtExampleButtonLoadingSpinner } from './button-loading-spinner-example/
         DtLoadingDistractorModule,
     ],
     declarations: [
-        DtExampleButtonColor,
-        DtExampleButtonDark,
-        DtExampleButtonDefault,
-        DtExampleButtonDisabled,
-        DtExampleButtonIconOnly,
-        DtExampleButtonIcons,
-        DtExampleButtonInteraction,
         DtExampleButtonLoadingSpinner,
-        DtExampleButtonVariant,
     ],
+    exports: [DtExampleButtonLoadingSpinner]
 })
 export class DtButtonExamplesModule {
 }

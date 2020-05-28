@@ -28,15 +28,8 @@ import { DtExampleButtonColor } from './button-color-example/button-color-exampl
     ],
     declarations: [
         DtExampleButtonColor,
-        DtExampleButtonDark,
-        DtExampleButtonDefault,
-        DtExampleButtonDisabled,
-        DtExampleButtonIconOnly,
-        DtExampleButtonIcons,
-        DtExampleButtonInteraction,
-        DtExampleButtonLoadingSpinner,
-        DtExampleButtonVariant,
     ],
+    exports: [DtExampleButtonColor]
 })
 export class DtButtonExamplesModule {
 }

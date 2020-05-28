@@ -30,8 +30,10 @@ import { DtExampleContextDialogDefault } from './context-dialog-default-example/
         DtIconModule,
         DtThemingModule,
     ],
-    declarations: [DtExampleContextDialogDefault],
-    exports: [DtExampleContextDialogDefault],
+    declarations: [
+        DtExampleContextDialogDefault,
+    ],
+    exports: [DtExampleContextDialogDefault]
 })
 export class DtContextDialogExamplesModule {
 }

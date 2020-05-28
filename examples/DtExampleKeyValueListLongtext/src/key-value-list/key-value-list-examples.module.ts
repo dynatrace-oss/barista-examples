@@ -19,8 +19,10 @@ import { DtKeyValueListModule } from '@dynatrace/barista-components/key-value-li
 import { DtExampleKeyValueListLongtext } from './key-value-list-longtext-example/key-value-list-longtext-example';
 @NgModule({
     imports: [CommonModule, DtKeyValueListModule],
-    declarations: [DtExampleKeyValueListLongtext],
-    exports: [DtExampleKeyValueListLongtext],
+    declarations: [
+        DtExampleKeyValueListLongtext,
+    ],
+    exports: [DtExampleKeyValueListLongtext]
 })
 export class DtKeyValueListExamplesModule {
 }

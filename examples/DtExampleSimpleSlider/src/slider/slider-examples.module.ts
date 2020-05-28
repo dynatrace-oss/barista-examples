@@ -18,8 +18,10 @@ import { DtExampleSimpleSlider } from './slider-simple-example/slider-simple-exa
 import { DtSliderModule } from '@dynatrace/barista-components/slider';
 @NgModule({
     imports: [DtSliderModule],
-    declarations: [DtExampleSimpleSlider],
-    exports: [DtExampleSimpleSlider],
+    declarations: [
+        DtExampleSimpleSlider,
+    ],
+    exports: [DtExampleSimpleSlider]
 })
 export class DtExamplesSliderModule {
 }

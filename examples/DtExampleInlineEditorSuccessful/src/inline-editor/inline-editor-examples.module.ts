@@ -25,8 +25,10 @@ import { DtExampleInlineEditorSuccessful } from './inline-editor-successful-exam
         FormsModule,
         ReactiveFormsModule,
     ],
-    declarations: [DtExampleInlineEditorSuccessful],
-    exports: [DtExampleInlineEditorSuccessful],
+    declarations: [
+        DtExampleInlineEditorSuccessful,
+    ],
+    exports: [DtExampleInlineEditorSuccessful]
 })
 export class DtInlineEditorExamplesModule {
 }

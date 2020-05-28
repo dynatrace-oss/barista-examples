@@ -19,8 +19,10 @@ import { DtThemingModule } from '@dynatrace/barista-components/theming';
 import { DtExampleRadioResponsive } from './radio-responsive-example/radio-responsive-example';
 @NgModule({
     imports: [DtRadioModule, DtThemingModule],
-    declarations: [DtExampleRadioResponsive],
-    exports: [DtExampleRadioResponsive],
+    declarations: [
+        DtExampleRadioResponsive,
+    ],
+    exports: [DtExampleRadioResponsive]
 })
 export class DtRadioExamplesModule {
 }

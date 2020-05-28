@@ -26,8 +26,10 @@ import { DtExampleBreadcrumbsDark } from './breadcrumbs-dark-example/breadcrumbs
         DtButtonGroupModule,
         DtThemingModule,
     ],
-    declarations: [DtExampleBreadcrumbsDark],
-    exports: [DtExampleBreadcrumbsDark],
+    declarations: [
+        DtExampleBreadcrumbsDark,
+    ],
+    exports: [DtExampleBreadcrumbsDark]
 })
 export class DtBreadcrumbsExamplesModule {
 }

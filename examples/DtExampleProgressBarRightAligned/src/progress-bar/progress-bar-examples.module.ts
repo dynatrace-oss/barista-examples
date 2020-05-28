@@ -30,8 +30,10 @@ import { DtExampleProgressBarRightAligned } from './progress-bar-right-aligned-e
         DtIndicatorModule,
         DtButtonGroupModule,
     ],
-    declarations: [DtExampleProgressBarRightAligned],
-    exports: [DtExampleProgressBarRightAligned],
+    declarations: [
+        DtExampleProgressBarRightAligned,
+    ],
+    exports: [DtExampleProgressBarRightAligned]
 })
 export class DtProgressBarExamplesModule {
 }

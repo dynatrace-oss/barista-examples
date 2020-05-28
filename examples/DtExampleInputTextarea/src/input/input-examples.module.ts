@@ -28,8 +28,10 @@ import { DtExampleInputTextarea } from './input-textarea-example/input-textarea-
         DtFormFieldModule,
         DtThemingModule,
     ],
-    declarations: [DtExampleInputTextarea],
-    exports: [DtExampleInputTextarea],
+    declarations: [
+        DtExampleInputTextarea,
+    ],
+    exports: [DtExampleInputTextarea]
 })
 export class DtInputExamplesModule {
 }

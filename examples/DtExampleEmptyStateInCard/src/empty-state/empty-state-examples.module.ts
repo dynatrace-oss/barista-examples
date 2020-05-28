@@ -28,8 +28,10 @@ import { DtExampleEmptyStateInCard } from './empty-state-in-card-example/empty-s
         DtCardModule,
         DtTableModule,
     ],
-    declarations: [DtExampleEmptyStateInCard],
-    exports: [DtExampleEmptyStateInCard],
+    declarations: [
+        DtExampleEmptyStateInCard,
+    ],
+    exports: [DtExampleEmptyStateInCard]
 })
 export class DtEmptyStateExamplesModule {
 }

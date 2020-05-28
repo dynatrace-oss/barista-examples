@@ -20,8 +20,10 @@ import { DtRadialChartModule } from '@dynatrace/barista-components/radial-chart'
 import { DtExampleRadialChartLegend } from './radial-chart-legend-example/radial-chart-legend-example';
 @NgModule({
     imports: [CommonModule, DtRadialChartModule, DtButtonModule],
-    declarations: [DtExampleRadialChartLegend],
-    exports: [DtExampleRadialChartLegend],
+    declarations: [
+        DtExampleRadialChartLegend,
+    ],
+    exports: [DtExampleRadialChartLegend]
 })
 export class DtRadialChartExamplesModule {
 }

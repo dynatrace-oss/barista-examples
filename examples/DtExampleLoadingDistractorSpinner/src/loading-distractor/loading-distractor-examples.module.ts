@@ -20,8 +20,10 @@ import { DtExampleLoadingDistractorSpinner } from './loading-distractor-spinner-
 import { DtInputModule } from '@dynatrace/barista-components/input';
 @NgModule({
     imports: [DtLoadingDistractorModule, DtFormFieldModule, DtInputModule],
-    declarations: [DtExampleLoadingDistractorSpinner],
-    exports: [DtExampleLoadingDistractorSpinner],
+    declarations: [
+        DtExampleLoadingDistractorSpinner,
+    ],
+    exports: [DtExampleLoadingDistractorSpinner]
 })
 export class DtLoadingDistractorExamplesModule {
 }

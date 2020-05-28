@@ -29,8 +29,10 @@ import { DtExampleAutocompleteCustomFilter } from './autocomplete-custom-filter-
         DtInputModule,
         DtFormFieldModule,
     ],
-    declarations: [DtExampleAutocompleteCustomFilter],
-    exports: [DtExampleAutocompleteCustomFilter],
+    declarations: [
+        DtExampleAutocompleteCustomFilter,
+    ],
+    exports: [DtExampleAutocompleteCustomFilter]
 })
 export class DtAutocompleteExamplesModule {
 }

@@ -34,8 +34,10 @@ import { DtProgressBarModule } from '@dynatrace/barista-components/progress-bar'
         DtButtonModule,
         DtProgressBarModule,
     ],
-    declarations: [DtExampleTreeTableProblemIndicator],
-    exports: [DtExampleTreeTableProblemIndicator],
+    declarations: [
+        DtExampleTreeTableProblemIndicator,
+    ],
+    exports: [DtExampleTreeTableProblemIndicator]
 })
 export class DtExamplesTreeTableModule {
 }

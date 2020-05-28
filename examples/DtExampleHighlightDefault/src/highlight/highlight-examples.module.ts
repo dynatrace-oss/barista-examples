@@ -20,7 +20,7 @@ import { DtExampleHighlightDefault } from './highlight-default-example/highlight
 @NgModule({
     imports: [DtInputModule, DtHighlightModule],
     declarations: [DtExampleHighlightDefault],
-    exports: [DtExampleHighlightDefault],
+    exports: [DtExampleHighlightDefault]
 })
 export class DtHighlightExamplesModule {
 }

@@ -28,8 +28,10 @@ import { DtExampleDrawerDynamic } from './drawer-dynamic-example/drawer-dynamic-
         DtSelectModule,
         DtFormFieldModule,
     ],
-    declarations: [DtExampleDrawerDynamic],
-    exports: [DtExampleDrawerDynamic],
+    declarations: [
+        DtExampleDrawerDynamic,
+    ],
+    exports: [DtExampleDrawerDynamic]
 })
 export class DtDrawerExamplesModule {
 }

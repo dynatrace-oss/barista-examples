@@ -19,8 +19,10 @@ import { DtKeyValueListModule } from '@dynatrace/barista-components/key-value-li
 import { DtExampleKeyValueListMulticolumn } from './key-value-list-multicolumn-example/key-value-list-multicolumn-example';
 @NgModule({
     imports: [CommonModule, DtKeyValueListModule],
-    declarations: [DtExampleKeyValueListMulticolumn],
-    exports: [DtExampleKeyValueListMulticolumn],
+    declarations: [
+        DtExampleKeyValueListMulticolumn,
+    ],
+    exports: [DtExampleKeyValueListMulticolumn]
 })
 export class DtKeyValueListExamplesModule {
 }

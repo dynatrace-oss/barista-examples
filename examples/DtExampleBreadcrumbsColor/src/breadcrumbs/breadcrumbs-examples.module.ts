@@ -26,8 +26,10 @@ import { DtExampleBreadcrumbsColor } from './breadcrumbs-color-example/breadcrum
         DtButtonGroupModule,
         DtThemingModule,
     ],
-    declarations: [DtExampleBreadcrumbsColor],
-    exports: [DtExampleBreadcrumbsColor],
+    declarations: [
+        DtExampleBreadcrumbsColor,
+    ],
+    exports: [DtExampleBreadcrumbsColor]
 })
 export class DtBreadcrumbsExamplesModule {
 }

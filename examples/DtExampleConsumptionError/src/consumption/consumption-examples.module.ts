@@ -28,8 +28,10 @@ import { DtExampleConsumptionError } from './consumption-error-example/consumpti
         DtIconModule,
         DtFormattersModule,
     ],
-    declarations: [DtExampleConsumptionError],
-    exports: [DtExampleConsumptionError],
+    declarations: [
+        DtExampleConsumptionError,
+    ],
+    exports: [DtExampleConsumptionError]
 })
 export class DtConsumptionExamplesModule {
 }

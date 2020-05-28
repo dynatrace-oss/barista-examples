@@ -26,8 +26,10 @@ import { DtExampleEventChartCustomColor } from './event-chart-custom-color-examp
         DtKeyValueListModule,
         DtButtonModule,
     ],
-    declarations: [DtExampleEventChartCustomColor],
-    exports: [DtExampleEventChartCustomColor],
+    declarations: [
+        DtExampleEventChartCustomColor,
+    ],
+    exports: [DtExampleEventChartCustomColor]
 })
 export class DtEventChartExamplesModule {
 }

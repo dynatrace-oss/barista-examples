@@ -26,8 +26,10 @@ import { DtExampleEventChartDefault } from './event-chart-default-example/event-
         DtKeyValueListModule,
         DtButtonModule,
     ],
-    declarations: [DtExampleEventChartDefault],
-    exports: [DtExampleEventChartDefault],
+    declarations: [
+        DtExampleEventChartDefault,
+    ],
+    exports: [DtExampleEventChartDefault]
 })
 export class DtEventChartExamplesModule {
 }

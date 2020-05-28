@@ -37,8 +37,10 @@ import { DtThemingModule } from '@dynatrace/barista-components/theming';
         DtAlertModule,
         DtThemingModule,
     ],
-    declarations: [DtExampleFormFieldErrorCustomValidator],
-    exports: [DtExampleFormFieldErrorCustomValidator],
+    declarations: [
+        DtExampleFormFieldErrorCustomValidator,
+    ],
+    exports: [DtExampleFormFieldErrorCustomValidator]
 })
 export class DtFormFieldExamplesModule {
 }

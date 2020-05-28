@@ -19,7 +19,7 @@ import { DtExampleExpandableTextDefault } from './expandable-text-default-exampl
 @NgModule({
     imports: [DtExpandableTextModule],
     declarations: [DtExampleExpandableTextDefault],
-    exports: [DtExampleExpandableTextDefault],
+    exports: [DtExampleExpandableTextDefault]
 })
 export class DtExpandableTextExamplesModule {
 }

@@ -19,8 +19,10 @@ import { DtThemingModule } from '@dynatrace/barista-components/theming';
 import { DtSwitchModule } from '@dynatrace/barista-components/switch';
 @NgModule({
     imports: [DtSwitchModule, DtThemingModule],
-    declarations: [DtExampleSwitchDefault],
-    exports: [DtExampleSwitchDefault],
+    declarations: [
+        DtExampleSwitchDefault,
+    ],
+    exports: [DtExampleSwitchDefault]
 })
 export class DtExamplesSwitchModule {
 }

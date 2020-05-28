@@ -19,8 +19,10 @@ import { DtInputModule } from '@dynatrace/barista-components/input';
 import { DtExampleFilterFieldDistinct } from './filter-field-distinct-example/filter-field-distinct-example';
 @NgModule({
     imports: [DtFilterFieldModule, DtInputModule],
-    declarations: [DtExampleFilterFieldDistinct],
-    exports: [DtExampleFilterFieldDistinct],
+    declarations: [
+        DtExampleFilterFieldDistinct,
+    ],
+    exports: [DtExampleFilterFieldDistinct]
 })
 export class DtFilterFieldExamplesModule {
 }

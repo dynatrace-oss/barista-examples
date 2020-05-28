@@ -29,8 +29,10 @@ import { DtExampleAutocompleteAttachDifferentElement } from './autocomplete-atta
         DtInputModule,
         DtFormFieldModule,
     ],
-    declarations: [DtExampleAutocompleteAttachDifferentElement],
-    exports: [DtExampleAutocompleteAttachDifferentElement],
+    declarations: [
+        DtExampleAutocompleteAttachDifferentElement,
+    ],
+    exports: [DtExampleAutocompleteAttachDifferentElement]
 })
 export class DtAutocompleteExamplesModule {
 }

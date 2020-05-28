@@ -28,8 +28,10 @@ import { DtExampleDrawerDefault } from './drawer-default-example/drawer-default-
         DtSelectModule,
         DtFormFieldModule,
     ],
-    declarations: [DtExampleDrawerDefault],
-    exports: [DtExampleDrawerDefault],
+    declarations: [
+        DtExampleDrawerDefault,
+    ],
+    exports: [DtExampleDrawerDefault]
 })
 export class DtDrawerExamplesModule {
 }

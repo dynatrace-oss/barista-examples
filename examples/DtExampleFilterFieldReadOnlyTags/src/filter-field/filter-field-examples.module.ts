@@ -19,8 +19,10 @@ import { DtInputModule } from '@dynatrace/barista-components/input';
 import { DtExampleFilterFieldReadOnlyTags } from './filter-field-readonly-non-editable-tags-example/filter-field-readonly-non-editable-tags-example';
 @NgModule({
     imports: [DtFilterFieldModule, DtInputModule],
-    declarations: [DtExampleFilterFieldReadOnlyTags],
-    exports: [DtExampleFilterFieldReadOnlyTags],
+    declarations: [
+        DtExampleFilterFieldReadOnlyTags,
+    ],
+    exports: [DtExampleFilterFieldReadOnlyTags]
 })
 export class DtFilterFieldExamplesModule {
 }

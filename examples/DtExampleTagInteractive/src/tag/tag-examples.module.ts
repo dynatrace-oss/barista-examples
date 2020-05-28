@@ -20,8 +20,10 @@ import { CommonModule } from '@angular/common';
 import { DtExampleTagInteractive } from './tag-interactive-example/tag-interactive-example';
 @NgModule({
     imports: [DtTagModule, DtButtonModule, CommonModule],
-    declarations: [DtExampleTagInteractive],
-    exports: [DtExampleTagInteractive],
+    declarations: [
+        DtExampleTagInteractive,
+    ],
+    exports: [DtExampleTagInteractive]
 })
 export class DtExamplesTagModule {
 }

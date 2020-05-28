@@ -30,26 +30,10 @@ import { DtExampleChartOrderedColors } from './chart-ordered-colors-example/char
         DtButtonGroupModule,
     ],
     declarations: [
-        DtExampleChartArea,
-        DtExampleChartAreaRange,
-        DtExampleChartBar,
-        DtExampleChartBehaviorSwitch,
-        DtExampleChartCategorized,
-        DtExampleChartDefault,
-        DtExampleChartDonut,
-        DtExampleChartHeatfield,
-        DtExampleChartHeatfieldMultiple,
-        DtExampleChartLine,
-        DtExampleChartLineWithGaps,
-        DtExampleChartLoading,
-        DtExampleChartMinMax,
         DtExampleChartOrderedColors,
-        DtExampleChartPie,
-        DtExampleChartSelectionAreaDefault,
-        DtExampleChartSinglePointData,
-        DtExampleChartStream,
     ],
     providers: [DtChartExampleDataService],
+    exports: [DtExampleChartOrderedColors]
 })
 export class DtChartExamplesModule {
 }

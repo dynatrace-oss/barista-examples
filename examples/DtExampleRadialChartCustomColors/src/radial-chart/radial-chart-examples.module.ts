@@ -20,8 +20,10 @@ import { DtRadialChartModule } from '@dynatrace/barista-components/radial-chart'
 import { DtExampleRadialChartCustomColors } from './radial-chart-custom-colors-example/radial-chart-custom-colors-example';
 @NgModule({
     imports: [CommonModule, DtRadialChartModule, DtButtonModule],
-    declarations: [DtExampleRadialChartCustomColors],
-    exports: [DtExampleRadialChartCustomColors],
+    declarations: [
+        DtExampleRadialChartCustomColors,
+    ],
+    exports: [DtExampleRadialChartCustomColors]
 })
 export class DtRadialChartExamplesModule {
 }

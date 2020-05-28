@@ -35,7 +35,10 @@ import { DtButtonModule } from '@dynatrace/barista-components/button';
         DtSelectModule,
         DtButtonModule,
     ],
-    declarations: [DtExampleStepperDefault],
+    declarations: [
+        DtExampleStepperDefault,
+    ],
+    exports: [DtExampleStepperDefault]
 })
 export class DtExamplesStepperModule {
 }

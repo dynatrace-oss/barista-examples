@@ -29,8 +29,10 @@ import { DtExampleAutocompleteGroups } from './autocomplete-groups-example/autoc
         DtInputModule,
         DtFormFieldModule,
     ],
-    declarations: [DtExampleAutocompleteGroups],
-    exports: [DtExampleAutocompleteGroups],
+    declarations: [
+        DtExampleAutocompleteGroups,
+    ],
+    exports: [DtExampleAutocompleteGroups]
 })
 export class DtAutocompleteExamplesModule {
 }

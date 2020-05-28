@@ -26,8 +26,10 @@ import { DtExampleEventChartSelection } from './event-chart-selection-example/ev
         DtKeyValueListModule,
         DtButtonModule,
     ],
-    declarations: [DtExampleEventChartSelection],
-    exports: [DtExampleEventChartSelection],
+    declarations: [
+        DtExampleEventChartSelection,
+    ],
+    exports: [DtExampleEventChartSelection]
 })
 export class DtEventChartExamplesModule {
 }

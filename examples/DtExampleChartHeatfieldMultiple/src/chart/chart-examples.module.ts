@@ -30,26 +30,10 @@ import { DtExampleChartHeatfieldMultiple } from './chart-heatfield-multiple-exam
         DtButtonGroupModule,
     ],
     declarations: [
-        DtExampleChartArea,
-        DtExampleChartAreaRange,
-        DtExampleChartBar,
-        DtExampleChartBehaviorSwitch,
-        DtExampleChartCategorized,
-        DtExampleChartDefault,
-        DtExampleChartDonut,
-        DtExampleChartHeatfield,
         DtExampleChartHeatfieldMultiple,
-        DtExampleChartLine,
-        DtExampleChartLineWithGaps,
-        DtExampleChartLoading,
-        DtExampleChartMinMax,
-        DtExampleChartOrderedColors,
-        DtExampleChartPie,
-        DtExampleChartSelectionAreaDefault,
-        DtExampleChartSinglePointData,
-        DtExampleChartStream,
     ],
     providers: [DtChartExampleDataService],
+    exports: [DtExampleChartHeatfieldMultiple]
 })
 export class DtChartExamplesModule {
 }

@@ -30,8 +30,10 @@ import { DtExampleContextDialogDark } from './context-dialog-dark-example/contex
         DtIconModule,
         DtThemingModule,
     ],
-    declarations: [DtExampleContextDialogDark],
-    exports: [DtExampleContextDialogDark],
+    declarations: [
+        DtExampleContextDialogDark,
+    ],
+    exports: [DtExampleContextDialogDark]
 })
 export class DtContextDialogExamplesModule {
 }

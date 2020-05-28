@@ -20,8 +20,10 @@ import { DtButtonModule } from '@dynatrace/barista-components/button';
 import { DtExampleExpandablePanelDynamicTrigger } from './expandable-panel-dynamic-trigger-example/expandable-panel-dynamic-trigger-example';
 @NgModule({
     imports: [CommonModule, DtExpandablePanelModule, DtButtonModule],
-    declarations: [DtExampleExpandablePanelDynamicTrigger],
-    exports: [DtExampleExpandablePanelDynamicTrigger],
+    declarations: [
+        DtExampleExpandablePanelDynamicTrigger,
+    ],
+    exports: [DtExampleExpandablePanelDynamicTrigger]
 })
 export class DtExpandablePanelExamplesModule {
 }

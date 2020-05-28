@@ -28,8 +28,10 @@ import { DtExampleConsumptionDefault } from './consumption-default-example/consu
         DtIconModule,
         DtFormattersModule,
     ],
-    declarations: [DtExampleConsumptionDefault],
-    exports: [DtExampleConsumptionDefault],
+    declarations: [
+        DtExampleConsumptionDefault,
+    ],
+    exports: [DtExampleConsumptionDefault]
 })
 export class DtConsumptionExamplesModule {
 }

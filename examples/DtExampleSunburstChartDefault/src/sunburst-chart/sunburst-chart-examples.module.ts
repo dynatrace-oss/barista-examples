@@ -26,8 +26,10 @@ import { DtFormattersModule } from '@dynatrace/barista-components/formatters';
         DtThemingModule,
         DtFormattersModule,
     ],
-    declarations: [DtExampleSunburstChartDefault],
-    exports: [DtExampleSunburstChartDefault],
+    declarations: [
+        DtExampleSunburstChartDefault,
+    ],
+    exports: [DtExampleSunburstChartDefault]
 })
 export class DtSunburstChartExamplesModule {
 }

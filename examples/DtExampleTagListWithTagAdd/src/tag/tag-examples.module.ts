@@ -20,8 +20,10 @@ import { CommonModule } from '@angular/common';
 import { DtExampleTagListWithTagAdd } from './tag-list-with-tag-add-example/tag-list-with-tag-add-example';
 @NgModule({
     imports: [DtTagModule, DtButtonModule, CommonModule],
-    declarations: [DtExampleTagListWithTagAdd],
-    exports: [DtExampleTagListWithTagAdd],
+    declarations: [
+        DtExampleTagListWithTagAdd,
+    ],
+    exports: [DtExampleTagListWithTagAdd]
 })
 export class DtExamplesTagModule {
 }

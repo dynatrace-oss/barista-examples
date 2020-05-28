@@ -28,8 +28,10 @@ import { DtExampleConsumptionWarning } from './consumption-warning-example/consu
         DtIconModule,
         DtFormattersModule,
     ],
-    declarations: [DtExampleConsumptionWarning],
-    exports: [DtExampleConsumptionWarning],
+    declarations: [
+        DtExampleConsumptionWarning,
+    ],
+    exports: [DtExampleConsumptionWarning]
 })
 export class DtConsumptionExamplesModule {
 }

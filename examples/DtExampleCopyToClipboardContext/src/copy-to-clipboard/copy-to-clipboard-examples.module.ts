@@ -30,8 +30,10 @@ import { DtExampleCopyToClipboardContext } from './copy-to-clipboard-context-exa
         DtContextDialogModule,
         DtThemingModule,
     ],
-    declarations: [DtExampleCopyToClipboardContext],
-    exports: [DtExampleCopyToClipboardContext],
+    declarations: [
+        DtExampleCopyToClipboardContext,
+    ],
+    exports: [DtExampleCopyToClipboardContext]
 })
 export class DtCopyToClipboardExamplesModule {
 }

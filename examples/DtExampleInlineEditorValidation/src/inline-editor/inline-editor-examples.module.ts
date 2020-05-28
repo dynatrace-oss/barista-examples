@@ -25,8 +25,10 @@ import { DtExampleInlineEditorValidation } from './inline-editor-validation-exam
         FormsModule,
         ReactiveFormsModule,
     ],
-    declarations: [DtExampleInlineEditorValidation],
-    exports: [DtExampleInlineEditorValidation],
+    declarations: [
+        DtExampleInlineEditorValidation,
+    ],
+    exports: [DtExampleInlineEditorValidation]
 })
 export class DtInlineEditorExamplesModule {
 }

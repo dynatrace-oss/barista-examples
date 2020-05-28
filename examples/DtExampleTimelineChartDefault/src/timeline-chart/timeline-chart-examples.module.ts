@@ -19,7 +19,7 @@ import { DtExampleTimelineChartDefault } from './timeline-chart-default-example/
 @NgModule({
     imports: [DtTimelineChartModule],
     declarations: [DtExampleTimelineChartDefault],
-    exports: [DtExampleTimelineChartDefault],
+    exports: [DtExampleTimelineChartDefault]
 })
 export class DtExamplesTimelineChartModule {
 }

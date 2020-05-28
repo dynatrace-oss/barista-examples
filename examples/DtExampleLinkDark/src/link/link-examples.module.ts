@@ -18,8 +18,10 @@ import { DtThemingModule } from '@dynatrace/barista-components/theming';
 import { DtExampleLinkDark } from './link-dark-example/link-dark-example';
 @NgModule({
     imports: [DtThemingModule],
-    declarations: [DtExampleLinkDark],
-    exports: [DtExampleLinkDark],
+    declarations: [
+        DtExampleLinkDark,
+    ],
+    exports: [DtExampleLinkDark]
 })
 export class DtLinkExamplesModule {
 }

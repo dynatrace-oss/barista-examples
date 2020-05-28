@@ -20,8 +20,10 @@ import { DtButtonModule } from '@dynatrace/barista-components/button';
 import { DtExampleButtonGroupDefault } from './button-group-default-example/button-group-default-example';
 @NgModule({
     imports: [CommonModule, DtButtonGroupModule, DtButtonModule],
-    declarations: [DtExampleButtonGroupDefault],
-    exports: [DtExampleButtonGroupDefault],
+    declarations: [
+        DtExampleButtonGroupDefault,
+    ],
+    exports: [DtExampleButtonGroupDefault]
 })
 export class DtButtonGroupExamplesModule {
 }

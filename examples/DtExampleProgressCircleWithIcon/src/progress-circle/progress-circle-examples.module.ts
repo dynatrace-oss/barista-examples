@@ -28,8 +28,10 @@ import { DtExampleProgressCircleWithIcon } from './progress-circle-with-icon-exa
         DtButtonGroupModule,
         DtIconModule,
     ],
-    declarations: [DtExampleProgressCircleWithIcon],
-    exports: [DtExampleProgressCircleWithIcon],
+    declarations: [
+        DtExampleProgressCircleWithIcon,
+    ],
+    exports: [DtExampleProgressCircleWithIcon]
 })
 export class DtProgressCircleExamplesModule {
 }

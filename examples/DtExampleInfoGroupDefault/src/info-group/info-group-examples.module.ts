@@ -21,7 +21,7 @@ import { DtExampleInfoGroupDefault } from './info-group-default-example/info-gro
 @NgModule({
     imports: [DtInfoGroupModule, DtCardModule, DtIconModule],
     declarations: [DtExampleInfoGroupDefault],
-    exports: [DtExampleInfoGroupDefault],
+    exports: [DtExampleInfoGroupDefault]
 })
 export class DtInfoGroupExamplesModule {
 }

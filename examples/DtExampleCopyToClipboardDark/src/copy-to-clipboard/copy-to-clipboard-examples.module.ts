@@ -30,8 +30,10 @@ import { DtExampleCopyToClipboardDark } from './copy-to-clipboard-dark-example/c
         DtContextDialogModule,
         DtThemingModule,
     ],
-    declarations: [DtExampleCopyToClipboardDark],
-    exports: [DtExampleCopyToClipboardDark],
+    declarations: [
+        DtExampleCopyToClipboardDark,
+    ],
+    exports: [DtExampleCopyToClipboardDark]
 })
 export class DtCopyToClipboardExamplesModule {
 }

@@ -30,8 +30,10 @@ import { DtExampleCopyToClipboardTextarea } from './copy-to-clipboard-textarea-e
         DtContextDialogModule,
         DtThemingModule,
     ],
-    declarations: [DtExampleCopyToClipboardTextarea],
-    exports: [DtExampleCopyToClipboardTextarea],
+    declarations: [
+        DtExampleCopyToClipboardTextarea,
+    ],
+    exports: [DtExampleCopyToClipboardTextarea]
 })
 export class DtCopyToClipboardExamplesModule {
 }

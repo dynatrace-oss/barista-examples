@@ -28,8 +28,10 @@ import { DtExampleInputDark } from './input-dark-example/input-dark-example';
         DtFormFieldModule,
         DtThemingModule,
     ],
-    declarations: [DtExampleInputDark],
-    exports: [DtExampleInputDark],
+    declarations: [
+        DtExampleInputDark,
+    ],
+    exports: [DtExampleInputDark]
 })
 export class DtInputExamplesModule {
 }

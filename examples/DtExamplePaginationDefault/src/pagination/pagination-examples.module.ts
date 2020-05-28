@@ -21,8 +21,10 @@ import { DtButtonModule } from '@dynatrace/barista-components/button';
 import { DtExamplePaginationDefault } from './pagination-default-example/pagination-default-example';
 @NgModule({
     imports: [CommonModule, DtPaginationModule, DtTableModule, DtButtonModule],
-    declarations: [DtExamplePaginationDefault],
-    exports: [DtExamplePaginationDefault],
+    declarations: [
+        DtExamplePaginationDefault,
+    ],
+    exports: [DtExamplePaginationDefault]
 })
 export class DtPaginationExamplesModule {
 }

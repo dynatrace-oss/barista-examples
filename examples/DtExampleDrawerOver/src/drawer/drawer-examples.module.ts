@@ -28,8 +28,10 @@ import { DtExampleDrawerOver } from './drawer-over-example/drawer-over-example';
         DtSelectModule,
         DtFormFieldModule,
     ],
-    declarations: [DtExampleDrawerOver],
-    exports: [DtExampleDrawerOver],
+    declarations: [
+        DtExampleDrawerOver,
+    ],
+    exports: [DtExampleDrawerOver]
 })
 export class DtDrawerExamplesModule {
 }

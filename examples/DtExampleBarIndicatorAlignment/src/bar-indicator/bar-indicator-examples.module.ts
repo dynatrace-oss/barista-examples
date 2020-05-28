@@ -26,8 +26,10 @@ import { DtExampleBarIndicatorAlignment } from './bar-indicator-alignment-exampl
         DtButtonGroupModule,
         DtTableModule,
     ],
-    declarations: [DtExampleBarIndicatorAlignment],
-    exports: [DtExampleBarIndicatorAlignment],
+    declarations: [
+        DtExampleBarIndicatorAlignment,
+    ],
+    exports: [DtExampleBarIndicatorAlignment]
 })
 export class DtBarIndicatorExamplesModule {
 }

@@ -26,8 +26,10 @@ import { DtExampleBreadcrumbsObservable } from './breadcrumbs-observable-example
         DtButtonGroupModule,
         DtThemingModule,
     ],
-    declarations: [DtExampleBreadcrumbsObservable],
-    exports: [DtExampleBreadcrumbsObservable],
+    declarations: [
+        DtExampleBreadcrumbsObservable,
+    ],
+    exports: [DtExampleBreadcrumbsObservable]
 })
 export class DtBreadcrumbsExamplesModule {
 }

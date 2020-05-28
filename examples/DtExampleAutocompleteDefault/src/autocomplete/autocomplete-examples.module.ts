@@ -29,8 +29,10 @@ import { DtExampleAutocompleteDefault } from './autocomplete-default-example/aut
         DtInputModule,
         DtFormFieldModule,
     ],
-    declarations: [DtExampleAutocompleteDefault],
-    exports: [DtExampleAutocompleteDefault],
+    declarations: [
+        DtExampleAutocompleteDefault,
+    ],
+    exports: [DtExampleAutocompleteDefault]
 })
 export class DtAutocompleteExamplesModule {
 }

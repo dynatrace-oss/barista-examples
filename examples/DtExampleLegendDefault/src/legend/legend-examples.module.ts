@@ -26,8 +26,10 @@ import { DtExampleLegendDefault } from './legend-default-example/legend-default-
         DtOverlayModule,
         DtTimelineChartModule,
     ],
-    declarations: [DtExampleLegendDefault],
-    exports: [DtExampleLegendDefault],
+    declarations: [
+        DtExampleLegendDefault,
+    ],
+    exports: [DtExampleLegendDefault]
 })
 export class DtLegendExamplesModule {
 }

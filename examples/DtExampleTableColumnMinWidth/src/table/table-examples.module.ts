@@ -48,8 +48,10 @@ import { FormsModule } from '@angular/forms';
         DtContainerBreakpointObserverModule,
         DtHighlightModule,
     ],
-    declarations: [DtExampleTableColumnMinWidth],
-    exports: [DtExampleTableColumnMinWidth],
+    declarations: [
+        DtExampleTableColumnMinWidth,
+    ],
+    exports: [DtExampleTableColumnMinWidth]
 })
 export class DtExamplesTableModule {
 }

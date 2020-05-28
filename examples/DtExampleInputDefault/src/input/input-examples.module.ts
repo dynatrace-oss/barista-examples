@@ -28,8 +28,10 @@ import { DtExampleInputDefault } from './input-default-example/input-default-exa
         DtFormFieldModule,
         DtThemingModule,
     ],
-    declarations: [DtExampleInputDefault],
-    exports: [DtExampleInputDefault],
+    declarations: [
+        DtExampleInputDefault,
+    ],
+    exports: [DtExampleInputDefault]
 })
 export class DtInputExamplesModule {
 }

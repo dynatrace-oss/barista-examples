@@ -32,8 +32,10 @@ import { DtExampleSelectDefault } from './select-default-example/select-default-
         FormsModule,
         DtCheckboxModule,
     ],
-    declarations: [DtExampleSelectDefault],
-    exports: [DtExampleSelectDefault],
+    declarations: [
+        DtExampleSelectDefault,
+    ],
+    exports: [DtExampleSelectDefault]
 })
 export class DtExamplesSelectModule {
 }

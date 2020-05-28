@@ -21,8 +21,10 @@ import { DtButtonModule } from '@dynatrace/barista-components/button';
 import { DtExampleCardDark } from './card-dark-example/card-dark-example';
 @NgModule({
     imports: [DtCardModule, DtIconModule, DtThemingModule, DtButtonModule],
-    declarations: [DtExampleCardDark],
-    exports: [DtExampleCardDark],
+    declarations: [
+        DtExampleCardDark,
+    ],
+    exports: [DtExampleCardDark]
 })
 export class DtCardExamplesModule {
 }

@@ -20,7 +20,7 @@ import { DtButtonModule } from '@dynatrace/barista-components/button';
 import { DtIconModule } from '@dynatrace/barista-components/icon';
 import { DtTileModule } from '@dynatrace/barista-components/tile';
 import { DtExampleOverlayDefault } from './overlay-default-example/overlay-default-example';
-import { DtExampleOverlayProgrammaticDummy } from './overlay-example-dummy-component';
+import { DtExampleSharedOverlayProgrammaticDummy } from './overlay-example-dummy-component';
 @NgModule({
     imports: [
         DtOverlayModule,
@@ -29,8 +29,11 @@ import { DtExampleOverlayProgrammaticDummy } from './overlay-example-dummy-compo
         DtKeyValueListModule,
         DtIconModule,
     ],
-    declarations: [DtExampleOverlayDefault, DtExampleOverlayProgrammaticDummy],
-    exports: [DtExampleOverlayDefault, DtExampleOverlayProgrammaticDummy],
+    declarations: [
+        DtExampleOverlayDefault,
+        DtExampleSharedOverlayProgrammaticDummy,
+    ],
+    exports: [DtExampleOverlayDefault]
 })
 export class DtOverlayExamplesModule {
 }

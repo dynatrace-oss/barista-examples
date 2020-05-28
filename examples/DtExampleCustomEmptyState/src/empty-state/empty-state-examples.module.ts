@@ -28,8 +28,11 @@ import { DtExampleCustomEmptyStateTable, DtExampleCustomEmptyState, } from './em
         DtCardModule,
         DtTableModule,
     ],
-    declarations: [DtExampleCustomEmptyStateTable, DtExampleCustomEmptyState],
-    exports: [DtExampleCustomEmptyStateTable, DtExampleCustomEmptyState],
+    declarations: [
+        DtExampleCustomEmptyStateTable,
+        DtExampleCustomEmptyState,
+    ],
+    exports: [DtExampleCustomEmptyStateTable, DtExampleCustomEmptyState]
 })
 export class DtEmptyStateExamplesModule {
 }

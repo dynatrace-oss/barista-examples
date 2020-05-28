@@ -25,8 +25,10 @@ import { DtExampleInlineEditorRequired } from './inline-editor-required-example/
         FormsModule,
         ReactiveFormsModule,
     ],
-    declarations: [DtExampleInlineEditorRequired],
-    exports: [DtExampleInlineEditorRequired],
+    declarations: [
+        DtExampleInlineEditorRequired,
+    ],
+    exports: [DtExampleInlineEditorRequired]
 })
 export class DtInlineEditorExamplesModule {
 }

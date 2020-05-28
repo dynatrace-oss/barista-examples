@@ -28,8 +28,10 @@ import { DtExampleInputNgModel } from './input-ng-model-example/input-ng-model-e
         DtFormFieldModule,
         DtThemingModule,
     ],
-    declarations: [DtExampleInputNgModel],
-    exports: [DtExampleInputNgModel],
+    declarations: [
+        DtExampleInputNgModel,
+    ],
+    exports: [DtExampleInputNgModel]
 })
 export class DtInputExamplesModule {
 }

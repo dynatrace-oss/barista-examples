@@ -48,8 +48,10 @@ import { FormsModule } from '@angular/forms';
         DtContainerBreakpointObserverModule,
         DtHighlightModule,
     ],
-    declarations: [DtExampleTableInteractiveRows],
-    exports: [DtExampleTableInteractiveRows],
+    declarations: [
+        DtExampleTableInteractiveRows,
+    ],
+    exports: [DtExampleTableInteractiveRows]
 })
 export class DtExamplesTableModule {
 }

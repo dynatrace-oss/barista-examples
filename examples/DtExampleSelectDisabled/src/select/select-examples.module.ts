@@ -32,8 +32,10 @@ import { DtExampleSelectDisabled } from './select-disabled-example/select-disabl
         FormsModule,
         DtCheckboxModule,
     ],
-    declarations: [DtExampleSelectDisabled],
-    exports: [DtExampleSelectDisabled],
+    declarations: [
+        DtExampleSelectDisabled,
+    ],
+    exports: [DtExampleSelectDisabled]
 })
 export class DtExamplesSelectModule {
 }

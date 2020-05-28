@@ -27,16 +27,9 @@ import { DtExampleButtonIconOnly } from './button-icon-only-example/button-icon-
         DtLoadingDistractorModule,
     ],
     declarations: [
-        DtExampleButtonColor,
-        DtExampleButtonDark,
-        DtExampleButtonDefault,
-        DtExampleButtonDisabled,
         DtExampleButtonIconOnly,
-        DtExampleButtonIcons,
-        DtExampleButtonInteraction,
-        DtExampleButtonLoadingSpinner,
-        DtExampleButtonVariant,
     ],
+    exports: [DtExampleButtonIconOnly]
 })
 export class DtButtonExamplesModule {
 }

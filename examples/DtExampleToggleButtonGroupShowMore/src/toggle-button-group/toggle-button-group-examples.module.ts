@@ -30,8 +30,10 @@ import { DtExampleToggleButtonGroupShowMore } from './toggle-button-group-show-m
         DtButtonModule,
         DtExpandableTextModule,
     ],
-    declarations: [DtExampleToggleButtonGroupShowMore],
-    exports: [DtExampleToggleButtonGroupShowMore],
+    declarations: [
+        DtExampleToggleButtonGroupShowMore,
+    ],
+    exports: [DtExampleToggleButtonGroupShowMore]
 })
 export class DtToggleButtonGroupExamplesModule {
 }

@@ -30,26 +30,10 @@ import { DtExampleChartLoading } from './chart-loading-example/chart-loading-exa
         DtButtonGroupModule,
     ],
     declarations: [
-        DtExampleChartArea,
-        DtExampleChartAreaRange,
-        DtExampleChartBar,
-        DtExampleChartBehaviorSwitch,
-        DtExampleChartCategorized,
-        DtExampleChartDefault,
-        DtExampleChartDonut,
-        DtExampleChartHeatfield,
-        DtExampleChartHeatfieldMultiple,
-        DtExampleChartLine,
-        DtExampleChartLineWithGaps,
         DtExampleChartLoading,
-        DtExampleChartMinMax,
-        DtExampleChartOrderedColors,
-        DtExampleChartPie,
-        DtExampleChartSelectionAreaDefault,
-        DtExampleChartSinglePointData,
-        DtExampleChartStream,
     ],
     providers: [DtChartExampleDataService],
+    exports: [DtExampleChartLoading]
 })
 export class DtChartExamplesModule {
 }

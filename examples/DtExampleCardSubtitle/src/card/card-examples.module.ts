@@ -21,8 +21,10 @@ import { DtButtonModule } from '@dynatrace/barista-components/button';
 import { DtExampleCardSubtitle } from './card-subtitle-example/card-subtitle-example';
 @NgModule({
     imports: [DtCardModule, DtIconModule, DtThemingModule, DtButtonModule],
-    declarations: [DtExampleCardSubtitle],
-    exports: [DtExampleCardSubtitle],
+    declarations: [
+        DtExampleCardSubtitle,
+    ],
+    exports: [DtExampleCardSubtitle]
 })
 export class DtCardExamplesModule {
 }

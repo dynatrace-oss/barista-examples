@@ -30,8 +30,10 @@ import { RouterModule } from '@angular/router';
         FormsModule,
         RouterModule,
     ],
-    declarations: [DtExampleSecondaryNavTitle],
-    exports: [DtExampleSecondaryNavTitle],
+    declarations: [
+        DtExampleSecondaryNavTitle,
+    ],
+    exports: [DtExampleSecondaryNavTitle]
 })
 export class DtExamplesSecondaryNavModule {
 }

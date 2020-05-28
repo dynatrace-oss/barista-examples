@@ -25,8 +25,10 @@ import { DtExampleInlineEditorDefault } from './inline-editor-default-example/in
         FormsModule,
         ReactiveFormsModule,
     ],
-    declarations: [DtExampleInlineEditorDefault],
-    exports: [DtExampleInlineEditorDefault],
+    declarations: [
+        DtExampleInlineEditorDefault,
+    ],
+    exports: [DtExampleInlineEditorDefault]
 })
 export class DtInlineEditorExamplesModule {
 }

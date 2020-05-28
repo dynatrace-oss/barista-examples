@@ -26,8 +26,10 @@ import { DtExampleEventChartOverlappingLoad } from './event-chart-overlapping-lo
         DtKeyValueListModule,
         DtButtonModule,
     ],
-    declarations: [DtExampleEventChartOverlappingLoad],
-    exports: [DtExampleEventChartOverlappingLoad],
+    declarations: [
+        DtExampleEventChartOverlappingLoad,
+    ],
+    exports: [DtExampleEventChartOverlappingLoad]
 })
 export class DtEventChartExamplesModule {
 }

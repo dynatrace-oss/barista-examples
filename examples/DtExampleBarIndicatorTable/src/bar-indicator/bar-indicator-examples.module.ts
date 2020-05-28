@@ -26,8 +26,10 @@ import { DtExampleBarIndicatorTable } from './bar-indicator-table-example/bar-in
         DtButtonGroupModule,
         DtTableModule,
     ],
-    declarations: [DtExampleBarIndicatorTable],
-    exports: [DtExampleBarIndicatorTable],
+    declarations: [
+        DtExampleBarIndicatorTable,
+    ],
+    exports: [DtExampleBarIndicatorTable]
 })
 export class DtBarIndicatorExamplesModule {
 }

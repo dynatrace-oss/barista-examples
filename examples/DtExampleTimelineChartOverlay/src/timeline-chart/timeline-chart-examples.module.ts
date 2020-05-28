@@ -19,7 +19,7 @@ import { DtExampleTimelineChartOverlay } from './timeline-chart-overlay-example/
 @NgModule({
     imports: [DtTimelineChartModule],
     declarations: [DtExampleTimelineChartOverlay],
-    exports: [DtExampleTimelineChartOverlay],
+    exports: [DtExampleTimelineChartOverlay]
 })
 export class DtExamplesTimelineChartModule {
 }

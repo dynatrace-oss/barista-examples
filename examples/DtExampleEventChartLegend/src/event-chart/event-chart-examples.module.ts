@@ -26,8 +26,10 @@ import { DtExampleEventChartLegend } from './event-chart-legend-example/event-ch
         DtKeyValueListModule,
         DtButtonModule,
     ],
-    declarations: [DtExampleEventChartLegend],
-    exports: [DtExampleEventChartLegend],
+    declarations: [
+        DtExampleEventChartLegend,
+    ],
+    exports: [DtExampleEventChartLegend]
 })
 export class DtEventChartExamplesModule {
 }

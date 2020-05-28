@@ -27,16 +27,9 @@ import { DtExampleButtonInteraction } from './button-interaction-example/button-
         DtLoadingDistractorModule,
     ],
     declarations: [
-        DtExampleButtonColor,
-        DtExampleButtonDark,
-        DtExampleButtonDefault,
-        DtExampleButtonDisabled,
-        DtExampleButtonIconOnly,
-        DtExampleButtonIcons,
         DtExampleButtonInteraction,
-        DtExampleButtonLoadingSpinner,
-        DtExampleButtonVariant,
     ],
+    exports: [DtExampleButtonInteraction]
 })
 export class DtButtonExamplesModule {
 }

@@ -32,8 +32,10 @@ import { DtExampleSelectGroups } from './select-groups-example/select-groups-exa
         FormsModule,
         DtCheckboxModule,
     ],
-    declarations: [DtExampleSelectGroups],
-    exports: [DtExampleSelectGroups],
+    declarations: [
+        DtExampleSelectGroups,
+    ],
+    exports: [DtExampleSelectGroups]
 })
 export class DtExamplesSelectModule {
 }

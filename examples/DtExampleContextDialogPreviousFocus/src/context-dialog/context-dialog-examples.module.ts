@@ -30,8 +30,10 @@ import { DtExampleContextDialogPreviousFocus } from './context-dialog-previous-f
         DtIconModule,
         DtThemingModule,
     ],
-    declarations: [DtExampleContextDialogPreviousFocus],
-    exports: [DtExampleContextDialogPreviousFocus],
+    declarations: [
+        DtExampleContextDialogPreviousFocus,
+    ],
+    exports: [DtExampleContextDialogPreviousFocus]
 })
 export class DtContextDialogExamplesModule {
 }

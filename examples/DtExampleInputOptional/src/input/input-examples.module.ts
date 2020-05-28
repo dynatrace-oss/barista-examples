@@ -28,8 +28,10 @@ import { DtExampleInputOptional } from './input-optional-example/input-optional-
         DtFormFieldModule,
         DtThemingModule,
     ],
-    declarations: [DtExampleInputOptional],
-    exports: [DtExampleInputOptional],
+    declarations: [
+        DtExampleInputOptional,
+    ],
+    exports: [DtExampleInputOptional]
 })
 export class DtInputExamplesModule {
 }

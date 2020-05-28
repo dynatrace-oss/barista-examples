@@ -19,7 +19,7 @@ import { DtExampleSidenavDefault } from './sidenav-default-example/sidenav-defau
 @NgModule({
     imports: [DtDrawerModule],
     declarations: [DtExampleSidenavDefault],
-    exports: [DtExampleSidenavDefault],
+    exports: [DtExampleSidenavDefault]
 })
 export class DtExamplesSidenavModule {
 }

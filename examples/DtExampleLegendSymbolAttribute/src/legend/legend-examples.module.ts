@@ -26,8 +26,10 @@ import { DtExampleLegendSymbolAttribute } from './legend-symbol-attribute-exampl
         DtOverlayModule,
         DtTimelineChartModule,
     ],
-    declarations: [DtExampleLegendSymbolAttribute],
-    exports: [DtExampleLegendSymbolAttribute],
+    declarations: [
+        DtExampleLegendSymbolAttribute,
+    ],
+    exports: [DtExampleLegendSymbolAttribute]
 })
 export class DtLegendExamplesModule {
 }

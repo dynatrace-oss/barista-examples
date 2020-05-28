@@ -21,8 +21,10 @@ import { DtInputModule } from '@dynatrace/barista-components/input';
 import { DtExampleFormattersCount } from './formatters-count-example/formatters-count-example';
 @NgModule({
     imports: [FormsModule, DtFormattersModule, DtFormFieldModule, DtInputModule],
-    declarations: [DtExampleFormattersCount],
-    exports: [DtExampleFormattersCount],
+    declarations: [
+        DtExampleFormattersCount,
+    ],
+    exports: [DtExampleFormattersCount]
 })
 export class DtFormattersExamplesModule {
 }

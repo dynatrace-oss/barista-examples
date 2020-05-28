@@ -32,8 +32,10 @@ import { DtExampleSelectComplexValue } from './select-complex-value-example/sele
         FormsModule,
         DtCheckboxModule,
     ],
-    declarations: [DtExampleSelectComplexValue],
-    exports: [DtExampleSelectComplexValue],
+    declarations: [
+        DtExampleSelectComplexValue,
+    ],
+    exports: [DtExampleSelectComplexValue]
 })
 export class DtExamplesSelectModule {
 }

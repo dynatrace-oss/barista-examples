@@ -30,26 +30,10 @@ import { DtExampleChartMinMax } from './chart-min-max-example/chart-min-max-exam
         DtButtonGroupModule,
     ],
     declarations: [
-        DtExampleChartArea,
-        DtExampleChartAreaRange,
-        DtExampleChartBar,
-        DtExampleChartBehaviorSwitch,
-        DtExampleChartCategorized,
-        DtExampleChartDefault,
-        DtExampleChartDonut,
-        DtExampleChartHeatfield,
-        DtExampleChartHeatfieldMultiple,
-        DtExampleChartLine,
-        DtExampleChartLineWithGaps,
-        DtExampleChartLoading,
         DtExampleChartMinMax,
-        DtExampleChartOrderedColors,
-        DtExampleChartPie,
-        DtExampleChartSelectionAreaDefault,
-        DtExampleChartSinglePointData,
-        DtExampleChartStream,
     ],
     providers: [DtChartExampleDataService],
+    exports: [DtExampleChartMinMax]
 })
 export class DtChartExamplesModule {
 }

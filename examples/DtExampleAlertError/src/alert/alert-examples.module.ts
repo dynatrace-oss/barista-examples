@@ -20,8 +20,10 @@ import { DtThemingModule } from '@dynatrace/barista-components/theming';
 import { DtExampleAlertError } from './alert-error-example/alert-error-example';
 @NgModule({
     imports: [DtAlertModule, DtButtonModule, DtThemingModule],
-    declarations: [DtExampleAlertError],
-    exports: [DtExampleAlertError],
+    declarations: [
+        DtExampleAlertError,
+    ],
+    exports: [DtExampleAlertError]
 })
 export class DtAlertExamplesModule {
 }

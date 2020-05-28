@@ -30,26 +30,10 @@ import { DtExampleChartLineWithGaps } from './chart-line-with-gaps-example/chart
         DtButtonGroupModule,
     ],
     declarations: [
-        DtExampleChartArea,
-        DtExampleChartAreaRange,
-        DtExampleChartBar,
-        DtExampleChartBehaviorSwitch,
-        DtExampleChartCategorized,
-        DtExampleChartDefault,
-        DtExampleChartDonut,
-        DtExampleChartHeatfield,
-        DtExampleChartHeatfieldMultiple,
-        DtExampleChartLine,
         DtExampleChartLineWithGaps,
-        DtExampleChartLoading,
-        DtExampleChartMinMax,
-        DtExampleChartOrderedColors,
-        DtExampleChartPie,
-        DtExampleChartSelectionAreaDefault,
-        DtExampleChartSinglePointData,
-        DtExampleChartStream,
     ],
     providers: [DtChartExampleDataService],
+    exports: [DtExampleChartLineWithGaps]
 })
 export class DtChartExamplesModule {
 }

@@ -19,8 +19,10 @@ import { DtThemingModule } from '@dynatrace/barista-components/theming';
 import { DtExampleRadioNameGrouping } from './radio-name-grouping-example/radio-name-grouping-example';
 @NgModule({
     imports: [DtRadioModule, DtThemingModule],
-    declarations: [DtExampleRadioNameGrouping],
-    exports: [DtExampleRadioNameGrouping],
+    declarations: [
+        DtExampleRadioNameGrouping,
+    ],
+    exports: [DtExampleRadioNameGrouping]
 })
 export class DtRadioExamplesModule {
 }

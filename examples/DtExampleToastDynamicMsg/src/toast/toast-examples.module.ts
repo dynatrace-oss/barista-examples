@@ -31,7 +31,7 @@ import { DtInputModule } from '@dynatrace/barista-components/input';
         DtFormFieldModule,
     ],
     declarations: [DtExampleToastDynamicMsg],
-    exports: [DtExampleToastDynamicMsg],
+    exports: [DtExampleToastDynamicMsg]
 })
 export class DtToastExamplesModule {
 }

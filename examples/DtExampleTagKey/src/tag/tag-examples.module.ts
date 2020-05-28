@@ -20,8 +20,10 @@ import { CommonModule } from '@angular/common';
 import { DtExampleTagKey } from './tag-key-example/tag-key-example';
 @NgModule({
     imports: [DtTagModule, DtButtonModule, CommonModule],
-    declarations: [DtExampleTagKey],
-    exports: [DtExampleTagKey],
+    declarations: [
+        DtExampleTagKey,
+    ],
+    exports: [DtExampleTagKey]
 })
 export class DtExamplesTagModule {
 }

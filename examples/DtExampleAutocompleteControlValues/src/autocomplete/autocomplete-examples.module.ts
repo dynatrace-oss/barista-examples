@@ -29,8 +29,10 @@ import { DtExampleAutocompleteControlValues } from './autocomplete-control-value
         DtInputModule,
         DtFormFieldModule,
     ],
-    declarations: [DtExampleAutocompleteControlValues],
-    exports: [DtExampleAutocompleteControlValues],
+    declarations: [
+        DtExampleAutocompleteControlValues,
+    ],
+    exports: [DtExampleAutocompleteControlValues]
 })
 export class DtAutocompleteExamplesModule {
 }

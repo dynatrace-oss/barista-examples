@@ -25,8 +25,10 @@ import { DtExampleInlineEditorApi } from './inline-editor-api-example/inline-edi
         FormsModule,
         ReactiveFormsModule,
     ],
-    declarations: [DtExampleInlineEditorApi],
-    exports: [DtExampleInlineEditorApi],
+    declarations: [
+        DtExampleInlineEditorApi,
+    ],
+    exports: [DtExampleInlineEditorApi]
 })
 export class DtInlineEditorExamplesModule {
 }

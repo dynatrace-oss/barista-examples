@@ -30,8 +30,10 @@ import { DtExampleToggleButtonGroupDynamicItems } from './toggle-button-group-dy
         DtButtonModule,
         DtExpandableTextModule,
     ],
-    declarations: [DtExampleToggleButtonGroupDynamicItems],
-    exports: [DtExampleToggleButtonGroupDynamicItems],
+    declarations: [
+        DtExampleToggleButtonGroupDynamicItems,
+    ],
+    exports: [DtExampleToggleButtonGroupDynamicItems]
 })
 export class DtToggleButtonGroupExamplesModule {
 }

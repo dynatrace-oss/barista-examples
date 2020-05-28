@@ -20,8 +20,10 @@ import { DtRadialChartModule } from '@dynatrace/barista-components/radial-chart'
 import { DtExampleRadialChartMaxValue } from './radial-chart-max-value-example/radial-chart-max-value-example';
 @NgModule({
     imports: [CommonModule, DtRadialChartModule, DtButtonModule],
-    declarations: [DtExampleRadialChartMaxValue],
-    exports: [DtExampleRadialChartMaxValue],
+    declarations: [
+        DtExampleRadialChartMaxValue,
+    ],
+    exports: [DtExampleRadialChartMaxValue]
 })
 export class DtRadialChartExamplesModule {
 }

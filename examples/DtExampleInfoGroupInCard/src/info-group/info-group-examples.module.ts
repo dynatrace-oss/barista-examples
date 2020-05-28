@@ -21,7 +21,7 @@ import { DtExampleInfoGroupInCard } from './info-group-in-card-example/info-grou
 @NgModule({
     imports: [DtInfoGroupModule, DtCardModule, DtIconModule],
     declarations: [DtExampleInfoGroupInCard],
-    exports: [DtExampleInfoGroupInCard],
+    exports: [DtExampleInfoGroupInCard]
 })
 export class DtInfoGroupExamplesModule {
 }

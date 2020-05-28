@@ -20,8 +20,10 @@ import { DtButtonModule } from '@dynatrace/barista-components/button';
 import { DtExampleExpandableSectionDark } from './expandable-section-dark-example/expandable-section-dark-example';
 @NgModule({
     imports: [DtExpandableSectionModule, DtThemingModule, DtButtonModule],
-    declarations: [DtExampleExpandableSectionDark],
-    exports: [DtExampleExpandableSectionDark],
+    declarations: [
+        DtExampleExpandableSectionDark,
+    ],
+    exports: [DtExampleExpandableSectionDark]
 })
 export class DtExpandableSectionExamplesModule {
 }

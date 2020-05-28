@@ -19,8 +19,10 @@ import { DtExampleTileDisabled } from './tile-disabled-example/tile-disabled-exa
 import { DtIconModule } from '@dynatrace/barista-components/icon';
 @NgModule({
     imports: [DtTileModule, DtIconModule],
-    declarations: [DtExampleTileDisabled],
-    exports: [DtExampleTileDisabled],
+    declarations: [
+        DtExampleTileDisabled,
+    ],
+    exports: [DtExampleTileDisabled]
 })
 export class DtExamplesTileModule {
 }

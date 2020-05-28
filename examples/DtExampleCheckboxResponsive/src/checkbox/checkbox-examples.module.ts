@@ -20,8 +20,10 @@ import { DtThemingModule } from '@dynatrace/barista-components/theming';
 import { DtExampleCheckboxResponsive } from './checkbox-responsive-example/checkbox-responsive-example';
 @NgModule({
     imports: [CommonModule, DtThemingModule, DtCheckboxModule],
-    declarations: [DtExampleCheckboxResponsive],
-    exports: [DtExampleCheckboxResponsive],
+    declarations: [
+        DtExampleCheckboxResponsive,
+    ],
+    exports: [DtExampleCheckboxResponsive]
 })
 export class DtCheckboxExamplesModule {
 }

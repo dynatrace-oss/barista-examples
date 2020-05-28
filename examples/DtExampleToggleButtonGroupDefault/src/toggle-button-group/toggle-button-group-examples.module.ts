@@ -30,8 +30,10 @@ import { DtExampleToggleButtonGroupDefault } from './toggle-button-group-default
         DtButtonModule,
         DtExpandableTextModule,
     ],
-    declarations: [DtExampleToggleButtonGroupDefault],
-    exports: [DtExampleToggleButtonGroupDefault],
+    declarations: [
+        DtExampleToggleButtonGroupDefault,
+    ],
+    exports: [DtExampleToggleButtonGroupDefault]
 })
 export class DtToggleButtonGroupExamplesModule {
 }

@@ -26,8 +26,10 @@ import { DtExampleEventChartOverlay } from './event-chart-overlay-example/event-
         DtKeyValueListModule,
         DtButtonModule,
     ],
-    declarations: [DtExampleEventChartOverlay],
-    exports: [DtExampleEventChartOverlay],
+    declarations: [
+        DtExampleEventChartOverlay,
+    ],
+    exports: [DtExampleEventChartOverlay]
 })
 export class DtEventChartExamplesModule {
 }

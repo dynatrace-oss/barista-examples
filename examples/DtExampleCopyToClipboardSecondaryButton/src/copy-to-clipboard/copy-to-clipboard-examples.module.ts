@@ -30,8 +30,10 @@ import { DtExampleCopyToClipboardSecondaryButton } from './copy-to-clipboard-sec
         DtContextDialogModule,
         DtThemingModule,
     ],
-    declarations: [DtExampleCopyToClipboardSecondaryButton],
-    exports: [DtExampleCopyToClipboardSecondaryButton],
+    declarations: [
+        DtExampleCopyToClipboardSecondaryButton,
+    ],
+    exports: [DtExampleCopyToClipboardSecondaryButton]
 })
 export class DtCopyToClipboardExamplesModule {
 }

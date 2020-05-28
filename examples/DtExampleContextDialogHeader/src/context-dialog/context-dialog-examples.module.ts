@@ -30,8 +30,10 @@ import { DtExampleContextDialogHeader } from './context-dialog-header-example/co
         DtIconModule,
         DtThemingModule,
     ],
-    declarations: [DtExampleContextDialogHeader],
-    exports: [DtExampleContextDialogHeader],
+    declarations: [
+        DtExampleContextDialogHeader,
+    ],
+    exports: [DtExampleContextDialogHeader]
 })
 export class DtContextDialogExamplesModule {
 }

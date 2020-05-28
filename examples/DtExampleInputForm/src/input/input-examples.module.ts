@@ -28,8 +28,10 @@ import { DtExampleInputForm } from './input-form-example/input-form-example';
         DtFormFieldModule,
         DtThemingModule,
     ],
-    declarations: [DtExampleInputForm],
-    exports: [DtExampleInputForm],
+    declarations: [
+        DtExampleInputForm,
+    ],
+    exports: [DtExampleInputForm]
 })
 export class DtInputExamplesModule {
 }

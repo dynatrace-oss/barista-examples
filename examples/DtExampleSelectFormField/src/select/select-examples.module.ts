@@ -32,8 +32,10 @@ import { DtExampleSelectFormField } from './select-form-field-example/select-for
         FormsModule,
         DtCheckboxModule,
     ],
-    declarations: [DtExampleSelectFormField],
-    exports: [DtExampleSelectFormField],
+    declarations: [
+        DtExampleSelectFormField,
+    ],
+    exports: [DtExampleSelectFormField]
 })
 export class DtExamplesSelectModule {
 }
