@@ -17,30 +17,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'dt-example-radial-chart-pie-default',
-  templateUrl: './radial-chart-legend-example.html',
-  styleUrls: ['./radial-chart-legend-example.scss'],
+  selector: 'dt-example-form-field-non-box-control',
+  templateUrl: 'form-field-non-box-control-example.html',
 })
-export class DtExampleRadialChartLegend {
-  legendPosition: 'right' | 'bottom' = 'right';
-  valueDisplayMode: 'absolute' | 'percent' = 'absolute';
-
-  _chartSeries = [
-    {
-      name: 'Chrome',
-      value: 43,
-    },
-    {
-      name: 'Safari',
-      value: 22,
-    },
-    {
-      name: 'Firefox',
-      value: 15,
-    },
-    {
-      name: 'Microsoft Edge',
-      value: 9,
-    },
-  ];
-}
+export class DtExampleFormFieldNonBoxControl {}

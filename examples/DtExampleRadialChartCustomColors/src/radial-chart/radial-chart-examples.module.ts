@@ -16,10 +16,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DtButtonModule } from '@dynatrace/barista-components/button';
+import { DtButtonGroupModule } from '@dynatrace/barista-components/button-group';
 import { DtRadialChartModule } from '@dynatrace/barista-components/radial-chart';
 import { DtExampleRadialChartCustomColors } from './radial-chart-custom-colors-example/radial-chart-custom-colors-example';
 @NgModule({
-    imports: [CommonModule, DtRadialChartModule, DtButtonModule],
+    imports: [
+        CommonModule,
+        DtRadialChartModule,
+        DtButtonModule,
+        DtButtonGroupModule,
+    ],
     declarations: [
         DtExampleRadialChartCustomColors,
     ],

@@ -24,6 +24,7 @@ import { DtButtonModule } from '@dynatrace/barista-components/button';
 import { DtExampleFormFieldPrefixSuffix } from './form-field-prefix-suffix-example/form-field-prefix-suffix-example';
 import { DtAlertModule } from '@dynatrace/barista-components/alert';
 import { DtThemingModule } from '@dynatrace/barista-components/theming';
+import { DtCheckboxModule } from '@dynatrace/barista-components/checkbox';
 @NgModule({
     imports: [
         CommonModule,
@@ -36,6 +37,7 @@ import { DtThemingModule } from '@dynatrace/barista-components/theming';
         DtLoadingDistractorModule,
         DtAlertModule,
         DtThemingModule,
+        DtCheckboxModule,
     ],
     declarations: [
         DtExampleFormFieldPrefixSuffix,

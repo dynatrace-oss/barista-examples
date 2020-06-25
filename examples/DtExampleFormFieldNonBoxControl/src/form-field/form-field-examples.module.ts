@@ -21,7 +21,7 @@ import { DtInputModule } from '@dynatrace/barista-components/input';
 import { DtIconModule } from '@dynatrace/barista-components/icon';
 import { DtLoadingDistractorModule } from '@dynatrace/barista-components/loading-distractor';
 import { DtButtonModule } from '@dynatrace/barista-components/button';
-import { DtExampleFormFieldDefault } from './form-field-default-example/form-field-default-example';
+import { DtExampleFormFieldNonBoxControl } from './form-field-non-box-control-example/form-field-non-box-control-example';
 import { DtAlertModule } from '@dynatrace/barista-components/alert';
 import { DtThemingModule } from '@dynatrace/barista-components/theming';
 import { DtCheckboxModule } from '@dynatrace/barista-components/checkbox';
@@ -40,9 +40,9 @@ import { DtCheckboxModule } from '@dynatrace/barista-components/checkbox';
         DtCheckboxModule,
     ],
     declarations: [
-        DtExampleFormFieldDefault,
+        DtExampleFormFieldNonBoxControl,
     ],
-    exports: [DtExampleFormFieldDefault]
+    exports: [DtExampleFormFieldNonBoxControl]
 })
 export class DtFormFieldExamplesModule {
 }
