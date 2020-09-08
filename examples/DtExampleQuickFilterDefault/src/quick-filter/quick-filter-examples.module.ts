@@ -19,7 +19,6 @@ import { DtExampleQuickFilterDefault } from './quick-filter-default-example/quic
 @NgModule({
     imports: [DtQuickFilterModule],
     declarations: [DtExampleQuickFilterDefault],
-    entryComponents: [DtExampleQuickFilterDefault],
     exports: [DtExampleQuickFilterDefault]
 })
 export class DtQuickFilterExamplesModule {

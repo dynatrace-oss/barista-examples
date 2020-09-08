@@ -30,8 +30,9 @@ import { DtButtonGroupModule } from '@dynatrace/barista-components/button-group'
         DtLegendModule,
         DtTableModule,
     ],
-    declarations: [DtExampleStackedSeriesChartGeneric],
-    entryComponents: [...DT_SINGLE_STACKED_SERIES_CHART_EXAMPLES],
+    declarations: [
+        DtExampleStackedSeriesChartGeneric,
+    ],
     exports: [DtExampleStackedSeriesChartGeneric]
 })
 export class DtExamplesStackedSeriesChartModule {

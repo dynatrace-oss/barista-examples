@@ -33,7 +33,6 @@ import { DtExampleSharedOverlayProgrammaticDummy } from './overlay-example-dummy
         DtExampleOverlayTile,
         DtExampleSharedOverlayProgrammaticDummy,
     ],
-    entryComponents: [DtExampleSharedOverlayProgrammaticDummy],
     exports: [DtExampleOverlayTile]
 })
 export class DtOverlayExamplesModule {

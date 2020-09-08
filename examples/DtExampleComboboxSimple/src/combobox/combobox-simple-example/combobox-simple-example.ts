@@ -14,46 +14,58 @@
  * limitations under the License.
  */
 
-import { ChangeDetectorRef, Component } from '@angular/core';
+import { ChangeDetectorRef, Component, ViewChild } from '@angular/core';
 import { take } from 'rxjs/operators';
 import { timer } from 'rxjs';
-import { DtComboboxFilterChange } from '@dynatrace/barista-components/experimental/combobox';
+import {
+  DtCombobox,
+  DtComboboxFilterChange,
+} from '@dynatrace/barista-components/experimental/combobox';
 
-const allOptions: { name: string; value: string }[] = [
+interface ExampleComboboxOption {
+  readonly name: string;
+  readonly value: string;
+}
+
+const allOptions: ExampleComboboxOption[] = [
   { name: 'Value 1', value: '[value: Value 1]' },
   { name: 'Value 2', value: '[value: Value 2]' },
   { name: 'Value 3', value: '[value: Value 3]' },
-  { name: 'Value 4', value: '[value: Value 4]' },
 ];
+
+/**
+ * Factory function for generating a filter function for a given filter string.
+ *
+ * @param filter Text to filter options for
+ */
+function optionFilter(
+  filter: string,
+): (option: ExampleComboboxOption) => boolean {
+  return (option: ExampleComboboxOption): boolean => {
+    return option.value.toLowerCase().indexOf(filter.toLowerCase()) >= 0;
+  };
+}
 
 @Component({
   selector: 'dt-example-simple-combobox',
   templateUrl: './combobox-simple-example.html',
 })
 export class DtExampleComboboxSimple {
+  @ViewChild(DtCombobox) combobox: DtCombobox<any>;
+
   _initialValue = allOptions[0];
-  _options = [...allOptions].filter(
-    (option) =>
-      option.name.toLowerCase().indexOf(allOptions[0].name.toLowerCase()) >= 0,
-  );
+  _options = [...allOptions];
   _loading = false;
-  _displayWith = (option: { name: string; value: string }) => option.name;
+  _displayWith = (option: ExampleComboboxOption) => option.name;
 
   constructor(private _changeDetectorRef: ChangeDetectorRef) {}
-
-  setOptions(): void {
-    this._options = [...allOptions];
-  }
 
   openedChanged(event: boolean): void {
     console.log(`openedChanged: '${event}'`);
   }
 
-  valueChanged(event: { name: string; value: string }): void {
-    this._options = [...allOptions].filter(
-      (option) =>
-        option.name.toLowerCase().indexOf(event.name.toLowerCase()) >= 0,
-    );
+  valueChanged(event: ExampleComboboxOption): void {
+    this._options = [...allOptions].filter(optionFilter(event.value));
   }
 
   filterChanged(event: DtComboboxFilterChange): void {
@@ -65,10 +77,7 @@ export class DtExampleComboboxSimple {
     timer(1500)
       .pipe(take(1))
       .subscribe(() => {
-        this._options = allOptions.filter(
-          (option) =>
-            option.name.toLowerCase().indexOf(event.filter.toLowerCase()) >= 0,
-        );
+        this._options = allOptions.filter(optionFilter(event.filter));
         this._loading = false;
         this._changeDetectorRef.markForCheck();
       });
