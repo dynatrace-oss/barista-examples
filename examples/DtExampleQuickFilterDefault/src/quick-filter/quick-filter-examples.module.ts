@@ -13,12 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { DtQuickFilterModule } from '@dynatrace/barista-components/experimental/quick-filter';
 import { DtExampleQuickFilterDefault } from './quick-filter-default-example/quick-filter-default-example';
 @NgModule({
-    imports: [DtQuickFilterModule],
-    declarations: [DtExampleQuickFilterDefault],
+    imports: [
+        DtQuickFilterModule,
+        CommonModule,
+        RouterModule.forChild([
+            { path: 'default', component: DtExampleQuickFilterDefault },
+            { path: 'show-more', component: DtExampleQuickFilterCustomShowMore },
+        ]),
+    ],
+    declarations: [
+        DtExampleQuickFilterDefault,
+    ],
     exports: [DtExampleQuickFilterDefault]
 })
 export class DtQuickFilterExamplesModule {
