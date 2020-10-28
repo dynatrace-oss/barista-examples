@@ -15,18 +15,10 @@
  */
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
 import { DtQuickFilterModule } from '@dynatrace/barista-components/experimental/quick-filter';
 import { DtExampleQuickFilterDefault } from './quick-filter-default-example/quick-filter-default-example';
 @NgModule({
-    imports: [
-        DtQuickFilterModule,
-        CommonModule,
-        RouterModule.forChild([
-            { path: 'default', component: DtExampleQuickFilterDefault },
-            { path: 'show-more', component: DtExampleQuickFilterCustomShowMore },
-        ]),
-    ],
+    imports: [DtQuickFilterModule, CommonModule],
     declarations: [
         DtExampleQuickFilterDefault,
     ],
