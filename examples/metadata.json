@@ -87,6 +87,8 @@
     "DtExampleCopyToClipboardError",
     "DtExampleCopyToClipboardSecondaryButton",
     "DtExampleCopyToClipboardTextarea",
+    "DtExampleDatepickerDark",
+    "DtExampleDatepickerDefault",
     "DtExampleDrawerDefault",
     "DtExampleDrawerDynamic",
     "DtExampleDrawerNested",

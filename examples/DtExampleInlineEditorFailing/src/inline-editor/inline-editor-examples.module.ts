@@ -27,7 +27,6 @@ import { DtExampleInlineEditorFailing } from './inline-editor-failing-example/in
     ],
     declarations: [
         DtExampleInlineEditorFailing,
-        DtExampleInlineEditorFailing,
     ],
     exports: [DtExampleInlineEditorFailing]
 })

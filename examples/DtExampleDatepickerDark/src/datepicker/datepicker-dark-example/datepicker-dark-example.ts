@@ -17,11 +17,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'dt-example-info-group-default',
-  templateUrl: 'indicator-default-example.html',
+  selector: 'dt-example-datepicker-dark',
+  templateUrl: 'datepicker-dark-example.html',
+  styleUrls: ['datepicker-dark-example.scss'],
 })
-export class DtExampleIndicatorDefault {
-  shown: boolean = true;
-
-  color: 'warning' | 'error' | 'recovered' = 'error';
+export class DtExampleDatepickerDark {
+  isTimepickerDisabled = false;
 }
