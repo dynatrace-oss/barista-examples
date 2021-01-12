@@ -16,19 +16,15 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { DtCheckboxModule } from '@dynatrace/barista-components/checkbox';
-import { DtNativeDateModule, DT_DEFAULT_DARK_THEMING_CONFIG, DT_OVERLAY_THEMING_CONFIG, } from '@dynatrace/barista-components/core';
+import { DT_DEFAULT_DARK_THEMING_CONFIG, DT_OVERLAY_THEMING_CONFIG, } from '@dynatrace/barista-components/core';
 import { DtDatepickerModule } from '@dynatrace/barista-components/experimental/datepicker';
 import { DtThemingModule } from '@dynatrace/barista-components/theming';
 import { DtExampleDatepickerDark } from './datepicker-dark-example/datepicker-dark-example';
 @NgModule({
-    imports: [
-        FormsModule,
-        DtDatepickerModule,
-        DtThemingModule,
-        DtCheckboxModule,
-        DtNativeDateModule,
+    imports: [FormsModule, DtDatepickerModule, DtThemingModule, DtCheckboxModule],
+    declarations: [
+        DtExampleDatepickerDark,
     ],
-    declarations: [DtExampleDatepickerDark],
     providers: [
         {
             provide: DT_OVERLAY_THEMING_CONFIG,
