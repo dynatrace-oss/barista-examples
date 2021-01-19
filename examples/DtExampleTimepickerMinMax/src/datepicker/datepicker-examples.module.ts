@@ -21,7 +21,7 @@ import { DtFormFieldModule } from '@dynatrace/barista-components/form-field';
 import { DT_DEFAULT_DARK_THEMING_CONFIG, DT_OVERLAY_THEMING_CONFIG, } from '@dynatrace/barista-components/core';
 import { DtDatepickerModule } from '@dynatrace/barista-components/experimental/datepicker';
 import { DtThemingModule } from '@dynatrace/barista-components/theming';
-import { DtExampleDatepickerDefault } from './datepicker-default-example/datepicker-default-example';
+import { DtExampleTimepickerMinMax } from './timepicker-min-max-example/timepicker-min-max-example';
 @NgModule({
     imports: [
         FormsModule,
@@ -32,7 +32,7 @@ import { DtExampleDatepickerDefault } from './datepicker-default-example/datepic
         DtFormFieldModule,
     ],
     declarations: [
-        DtExampleDatepickerDefault,
+        DtExampleTimepickerMinMax,
     ],
     providers: [
         {
@@ -40,7 +40,7 @@ import { DtExampleDatepickerDefault } from './datepicker-default-example/datepic
             useValue: DT_DEFAULT_DARK_THEMING_CONFIG,
         },
     ],
-    exports: [DtExampleDatepickerDefault]
+    exports: [DtExampleTimepickerMinMax]
 })
 export class DtExamplesDatepickerModule {
 }

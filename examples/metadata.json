@@ -90,6 +90,7 @@
     "DtExampleCalendarMinMax",
     "DtExampleDatepickerDark",
     "DtExampleDatepickerDefault",
+    "DtExampleTimepickerMinMax",
     "DtExampleDrawerDefault",
     "DtExampleDrawerDynamic",
     "DtExampleDrawerNested",
