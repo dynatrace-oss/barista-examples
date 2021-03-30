@@ -211,6 +211,7 @@
     "DtExampleProgressCircleWithColor",
     "DtExampleProgressCircleWithIcon",
     "DtExampleProgressCircleWithText",
+    "DtExampleQuickFilterCustomParser",
     "DtExampleQuickFilterCustomShowMore",
     "DtExampleQuickFilterDefault",
     "DtExampleRadialChartCustomColors",
