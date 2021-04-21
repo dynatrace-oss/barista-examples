@@ -123,6 +123,7 @@
     "DtExampleFilterFieldAsync",
     "DtExampleFilterFieldClearall",
     "DtExampleFilterFieldCustomParser",
+    "DtExampleFilterFieldCustomPlaceholder",
     "DtExampleFilterFieldDefault",
     "DtExampleFilterFieldDefaultSearch",
     "DtExampleFilterFieldDisabled",
