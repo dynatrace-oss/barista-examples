@@ -105,6 +105,7 @@
     "DtExampleEventChartComplexSelection",
     "DtExampleEventChartCustomColor",
     "DtExampleEventChartDefault",
+    "DtExampleEventChartHeatfield",
     "DtExampleEventChartLegend",
     "DtExampleEventChartOverlappingLoad",
     "DtExampleEventChartOverlay",
