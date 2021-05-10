@@ -15,6 +15,7 @@
  */
 import { NgModule } from '@angular/core';
 import { DtButtonModule } from '@dynatrace/barista-components/button';
+import { DtOverlayModule } from '@dynatrace/barista-components/overlay';
 import { DtSunburstChartModule } from '@dynatrace/barista-components/sunburst-chart';
 import { DtThemingModule } from '@dynatrace/barista-components/theming';
 import { DtExampleSunburstChartDefault } from './sunburst-chart-default-example/sunburst-chart-default-example';
@@ -25,6 +26,7 @@ import { DtFormattersModule } from '@dynatrace/barista-components/formatters';
         DtButtonModule,
         DtThemingModule,
         DtFormattersModule,
+        DtOverlayModule,
     ],
     declarations: [
         DtExampleSunburstChartDefault,
