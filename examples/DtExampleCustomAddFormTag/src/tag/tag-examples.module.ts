@@ -13,16 +13,28 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { DtFilterFieldModule } from '@dynatrace/barista-components/filter-field';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DtButtonModule } from '@dynatrace/barista-components/button';
+import { DtFormFieldModule } from '@dynatrace/barista-components/form-field';
+import { DtTagModule } from '@dynatrace/barista-components/tag';
+import { DtExampleCustomAddFormTag } from './tag-custom-add-form-example/tag-custom-add-form-example';
 import { DtInputModule } from '@dynatrace/barista-components/input';
-import { DtExampleFilterFieldDefault } from './filter-field-default-example/filter-field-default-example';
 @NgModule({
-    imports: [DtFilterFieldModule, DtInputModule],
-    declarations: [
-        DtExampleFilterFieldDefault,
+    imports: [
+        DtTagModule,
+        DtButtonModule,
+        CommonModule,
+        DtFormFieldModule,
+        FormsModule,
+        ReactiveFormsModule,
+        DtInputModule,
     ],
-    exports: [DtExampleFilterFieldDefault]
+    declarations: [
+        DtExampleCustomAddFormTag,
+    ],
+    exports: [DtExampleCustomAddFormTag]
 })
-export class DtFilterFieldExamplesModule {
+export class DtExamplesTagModule {
 }

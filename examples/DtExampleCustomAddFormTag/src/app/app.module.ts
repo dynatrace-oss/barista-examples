@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DtIconModule } from '@dynatrace/barista-components/icon';
 import { HttpClientModule } from '@angular/common/http';
-import { DtFilterFieldExamplesModule } from '../filter-field/filter-field-examples.module';
+import { DtExamplesTagModule } from '../tag/tag-examples.module';
 
 @NgModule({
   imports: [
@@ -16,7 +16,7 @@ import { DtFilterFieldExamplesModule } from '../filter-field/filter-field-exampl
     DtIconModule.forRoot({
       svgIconLocation: `https://unpkg.com/@dynatrace/barista-icons/{{name}}.svg`,
     }),
-    DtFilterFieldExamplesModule
+    DtExamplesTagModule
   ],
   declarations: [ AppComponent, ],
   bootstrap:    [ AppComponent ]

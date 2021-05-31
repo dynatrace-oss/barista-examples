@@ -13,13 +13,24 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { NgModule } from '@angular/core';
-import { DtTagModule } from '@dynatrace/barista-components/tag';
-import { DtButtonModule } from '@dynatrace/barista-components/button';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DtButtonModule } from '@dynatrace/barista-components/button';
+import { DtFormFieldModule } from '@dynatrace/barista-components/form-field';
+import { DtTagModule } from '@dynatrace/barista-components/tag';
 import { DtExampleTagDefault } from './tag-default-example/tag-default-example';
+import { DtInputModule } from '@dynatrace/barista-components/input';
 @NgModule({
-    imports: [DtTagModule, DtButtonModule, CommonModule],
+    imports: [
+        DtTagModule,
+        DtButtonModule,
+        CommonModule,
+        DtFormFieldModule,
+        FormsModule,
+        ReactiveFormsModule,
+        DtInputModule,
+    ],
     declarations: [
         DtExampleTagDefault,
     ],
