@@ -2,7 +2,7 @@
   "name": "DtExampleRadioDefault",
   "dependencies": {
     "@angular/animations": "^11.2.8",
-    "@angular/cdk": "^11.0.3",
+    "@angular/cdk": "^11.2.13",
     "@angular/common": "^11.2.8",
     "@angular/compiler": "^11.2.8",
     "@angular/core": "^11.2.8",
@@ -21,7 +21,7 @@
     "@dynatrace/barista-fonts": "latest",
     "@dynatrace/barista-icons": "latest",
     "highcharts": "^7.2.1",
-    "lodash-es": "^4.17.15"
+    "lodash-es": "^4.17.21"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "0.1102.7",
