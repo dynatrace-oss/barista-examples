@@ -21,14 +21,18 @@ import { DtExampleStackedSeriesChartSingle } from './stacked-series-chart-single
 import { CommonModule } from '@angular/common';
 import { DtTableModule } from '@dynatrace/barista-components/table';
 import { DtButtonGroupModule } from '@dynatrace/barista-components/button-group';
+import { FormsModule } from '@angular/forms';
 @NgModule({
     imports: [
         CommonModule,
         DtStackedSeriesChartModule,
         DtFormattersModule,
         DtButtonGroupModule,
+        DtInputModule,
         DtLegendModule,
         DtTableModule,
+        DtSwitchModule,
+        FormsModule,
     ],
     declarations: [
         DtExampleStackedSeriesChartSingle,
