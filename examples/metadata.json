@@ -253,6 +253,7 @@
     "DtExampleStackedSeriesChartDate",
     "DtExampleStackedSeriesChartFilled",
     "DtExampleStackedSeriesChartGeneric",
+    "DtExampleStackedSeriesChartHeatField",
     "DtExampleStackedSeriesChartLinear",
     "DtExampleStackedSeriesChartSingle",
     "DtExampleStepperDefault",
