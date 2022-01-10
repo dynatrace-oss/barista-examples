@@ -274,6 +274,8 @@
     "DtExampleTableDynamicColumns",
     "DtExampleTableEmptyState",
     "DtExampleTableExpandableRows",
+    "DtExampleTableExport",
+    "DtExampleTableExportSelection",
     "DtExampleTableFavoriteColumn",
     "DtExampleTableFavoriteColumnNoHeader",
     "DtExampleTableInteractiveRows",
