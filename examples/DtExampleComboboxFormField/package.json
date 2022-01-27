@@ -1,5 +1,5 @@
 {
-  "name": "DtExampleComboboxFormControl",
+  "name": "DtExampleComboboxFormField",
   "dependencies": {
     "@angular/animations": "^12.2.8",
     "@angular/cdk": "^12.2.8",

@@ -14,23 +14,24 @@
  * limitations under the License.
  */
 import { NgModule } from '@angular/core';
-import { DtComboboxModule } from '@dynatrace/barista-components/experimental/combobox';
-import { DtExampleComboboxFormControl } from './combobox-form-control-example/combobox-form-control-example';
-import { DtOptionModule } from '@dynatrace/barista-components/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DtComboboxModule } from '@dynatrace/barista-components/experimental/combobox';
+import { DtExampleComboboxFormField } from './combobox-form-field-example/combobox-form-field-example';
+import { DtOptionModule } from '@dynatrace/barista-components/core';
 @NgModule({
     imports: [
         DtComboboxModule,
         FormsModule,
         ReactiveFormsModule,
         DtOptionModule,
+        DtFormFieldModule,
         CommonModule,
     ],
     declarations: [
-        DtExampleComboboxFormControl,
+        DtExampleComboboxFormField,
     ],
-    exports: [DtExampleComboboxFormControl]
+    exports: [DtExampleComboboxFormField]
 })
 export class DtComboboxExamplesModule {
 }
