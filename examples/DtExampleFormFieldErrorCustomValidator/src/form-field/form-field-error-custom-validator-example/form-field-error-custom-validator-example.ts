@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2021 Dynatrace LLC
+ * Copyright 2022 Dynatrace LLC
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -29,7 +29,7 @@ import {
 })
 export class DtExampleFormFieldErrorCustomValidator {
   passwordFormControl = new FormControl('', [
-    // tslint:disable-next-line: no-unbound-method
+    // eslint-disable-next-line @typescript-eslint/unbound-method
     Validators.required,
     Validators.minLength(4),
     this.baristaValidator(),
@@ -52,7 +52,7 @@ export class DtExampleFormFieldErrorCustomValidator {
    * exporting/importing this function is preferred since it increases reusability
    */
   baristaValidator(): ValidatorFn {
-    // tslint:disable-next-line: no-any
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     return (control: AbstractControl): { [key: string]: any } | null => {
       const required = !control.value.includes('barista');
       return required ? { barista: { value: control.value } } : null;
