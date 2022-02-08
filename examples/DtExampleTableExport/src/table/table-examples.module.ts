@@ -27,6 +27,7 @@ import { DtKeyValueListModule } from '@dynatrace/barista-components/key-value-li
 import { DtFormattersModule } from '@dynatrace/barista-components/formatters';
 import { DtContainerBreakpointObserverModule } from '@dynatrace/barista-components/container-breakpoint-observer';
 import { DtHighlightModule } from '@dynatrace/barista-components/highlight';
+import { DtContextDialogModule } from '@dynatrace/barista-components/context-dialog';
 import { DtExampleTableExport } from './table-export-example/table-export-example';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { FormsModule } from '@angular/forms';
@@ -47,6 +48,7 @@ import { FormsModule } from '@angular/forms';
         DtFormattersModule,
         DtContainerBreakpointObserverModule,
         DtHighlightModule,
+        DtContextDialogModule,
     ],
     declarations: [
         DtExampleTableExport,
