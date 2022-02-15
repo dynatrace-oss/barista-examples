@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2022 Dynatrace LLC
+ * Copyright 2021 Dynatrace LLC
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -29,7 +29,7 @@ export class DtExampleTableObservable {
   dataSource = new BehaviorSubject<object[]>([]);
   cancelSubscriptionSource = new Subject<void>();
 
-  // eslint-disable-next-line no-magic-numbers
+  // tslint:disable-next-line:no-magic-numbers
   private source = interval(1000);
   subscription: Subscription;
   isSubscribed = false;
@@ -58,7 +58,7 @@ export class DtExampleTableObservable {
   }
 
   getAnotherRow(): void {
-    /* eslint-disable */
+    // tslint:disable
     this.dataSource.next([
       ...this.dataSource.value,
       {
@@ -70,6 +70,6 @@ export class DtExampleTableObservable {
         traffic: `${(Math.random() * 100).toFixed(2)} Mbit/s`,
       },
     ]);
-    /* eslint-enable */
+    // tslint:enable
   }
 }

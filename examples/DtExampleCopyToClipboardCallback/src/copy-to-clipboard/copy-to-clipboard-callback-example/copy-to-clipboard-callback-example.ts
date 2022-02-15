@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2022 Dynatrace LLC
+ * Copyright 2021 Dynatrace LLC
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -29,7 +29,7 @@ export class DtExampleCopyToClipboardCallback {
 
   copyCallback(): void {
     this._copyHint = `Copied "${this._value}" to clipboard.`;
-    // eslint-disable-next-line no-magic-numbers
+    // tslint:disable-next-line:no-magic-numbers
     timer(2500).subscribe((): void => {
       this._copyHint = 'Will change after copy.';
       this._changeDetectorRef.markForCheck();

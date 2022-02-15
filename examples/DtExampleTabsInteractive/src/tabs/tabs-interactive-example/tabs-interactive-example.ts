@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2022 Dynatrace LLC
+ * Copyright 2021 Dynatrace LLC
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -32,9 +32,9 @@ export class DtExampleTabsInteractive {
     this.simulatedColor = 'error';
     this.simulationRunning = true;
     this.connectivity = '30%';
-    // eslint-disable-next-line no-magic-numbers
+    // tslint:disable-next-line:no-magic-numbers
     timer(1000, 1000)
-      // eslint-disable-next-line no-magic-numbers
+      // tslint:disable-next-line:no-magic-numbers
       .pipe(take(2))
       .subscribe(
         () => {

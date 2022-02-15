@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2022 Dynatrace LLC
+ * Copyright 2021 Dynatrace LLC
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -21,8 +21,6 @@ import { DtExampleStackedSeriesChartLinear } from './stacked-series-chart-linear
 import { CommonModule } from '@angular/common';
 import { DtTableModule } from '@dynatrace/barista-components/table';
 import { DtButtonGroupModule } from '@dynatrace/barista-components/button-group';
-import { DtInputModule } from '@dynatrace/barista-components/input';
-import { DtSwitchModule } from '@dynatrace/barista-components/switch';
 import { FormsModule } from '@angular/forms';
 @NgModule({
     imports: [

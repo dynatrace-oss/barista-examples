@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2022 Dynatrace LLC
+ * Copyright 2021 Dynatrace LLC
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -19,15 +19,6 @@ import { ElementRef, Injectable } from '@angular/core';
 import { Observable, Subject, merge } from 'rxjs';
 import { distinctUntilChanged, filter, map } from 'rxjs/operators';
 
-interface ViewportRect {
-  top: number;
-  left: number;
-  bottom: number;
-  right: number;
-  height: number;
-  width: number;
-}
-
 @Injectable({ providedIn: 'root' })
 export class Viewport {
   private _refresher = new Subject<undefined | Element | ElementRef>();
@@ -41,7 +32,7 @@ export class Viewport {
    * Stream that emits the ClientRect for the
    * viewport's bounds on every change (includes scroll)
    */
-  change(): Observable<ViewportRect> {
+  change(): Observable<ClientRect> {
     return this._change();
   }
 
@@ -73,8 +64,8 @@ export class Viewport {
       .pipe(map(() => void 0));
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  private _change(context?: any): Observable<ViewportRect> {
+  // tslint:disable-next-line:no-any
+  private _change(context?: any): Observable<ClientRect> {
     return merge(
       this._scrollDispatcher.scrolled(),
       this._viewportRuler.change(200),
@@ -88,7 +79,7 @@ export class Viewport {
 /** Calculates if the element is visible in the viewports Client Rect */
 export function isElementVisible(
   element: Element,
-  viewportRect: ViewportRect,
+  viewportRect: ClientRect,
 ): boolean {
   const { bottom, top } = element.getBoundingClientRect();
   return bottom >= 0 && top <= viewportRect.height;

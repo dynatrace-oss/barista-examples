@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2022 Dynatrace LLC
+ * Copyright 2021 Dynatrace LLC
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -36,7 +36,7 @@ export class DtExampleOverlayImplicitContext implements OnInit, OnDestroy {
   @ViewChild('origin', { static: true }) origin: ElementRef;
 
   @ViewChild('overlay', { static: true, read: TemplateRef })
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  // tslint:disable-next-line: no-any
   overlayTemplate: TemplateRef<any>;
 
   /** Interval reference to clear up the interval on destroy */
@@ -57,7 +57,7 @@ export class DtExampleOverlayImplicitContext implements OnInit, OnDestroy {
     clearInterval(this._interval);
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  // tslint:disable-next-line: no-any
   overlayRef: DtOverlayRef<any> | null;
 
   createOverlay(): void {

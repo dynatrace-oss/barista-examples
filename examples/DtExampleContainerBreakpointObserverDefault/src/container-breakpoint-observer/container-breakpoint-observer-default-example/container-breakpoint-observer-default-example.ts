@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2022 Dynatrace LLC
+ * Copyright 2021 Dynatrace LLC
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -28,7 +28,7 @@ export class DtExampleContainerBreakpointObserverDefault implements OnInit {
 
   ngOnInit(): void {
     this.breakpointObserver.observe('(min-width: 400px)').subscribe((event) => {
-      // eslint-disable-next-line no-console
+      // tslint:disable-next-line: no-console
       console.log(`Matches '(min-width: 400px)':`, event.matches);
     });
   }

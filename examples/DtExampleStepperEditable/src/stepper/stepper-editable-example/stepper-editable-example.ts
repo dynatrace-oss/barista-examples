@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2022 Dynatrace LLC
+ * Copyright 2021 Dynatrace LLC
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -30,11 +30,11 @@ export class DtExampleStepperEditable implements OnInit {
 
   ngOnInit(): void {
     this.firstFormGroup = this._formBuilder.group({
-      // eslint-disable-next-line @typescript-eslint/unbound-method
+      // tslint:disable-next-line: no-unbound-method
       firstCtrl: ['', Validators.required],
     });
     this.secondFormGroup = this._formBuilder.group({
-      // eslint-disable-next-line @typescript-eslint/unbound-method
+      // tslint:disable-next-line: no-unbound-method
       secondCtrl: ['', Validators.required],
     });
   }

@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2022 Dynatrace LLC
+ * Copyright 2021 Dynatrace LLC
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -117,7 +117,7 @@ export class DtExampleTablePagination implements OnInit {
       factor: 1024,
     });
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  // tslint:disable-next-line: no-any
   combineMemory(row: any): string {
     const memoryPercentage = formatPercent(row.memoryPerc);
     const memoryTotal = formatBytes(row.memoryTotal, {
@@ -128,7 +128,7 @@ export class DtExampleTablePagination implements OnInit {
     return `${memoryPercentage} of ${memoryTotal}`;
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  // tslint:disable-next-line: no-any
   memorySortAccessor(row: any): number {
     return row.memoryPerc;
   }
