@@ -17,6 +17,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DtComboboxModule } from '@dynatrace/barista-components/experimental/combobox';
+import { DtFormFieldModule } from '@dynatrace/barista-components/form-field';
 import { DtExampleComboboxFormField } from './combobox-form-field-example/combobox-form-field-example';
 import { DtOptionModule } from '@dynatrace/barista-components/core';
 @NgModule({
