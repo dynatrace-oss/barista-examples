@@ -149,6 +149,7 @@
     "DtExampleFormattersRate",
     "DtExampleHighlightCaseSensitive",
     "DtExampleHighlightDefault",
+    "DtExampleHighlightTermArray",
     "DtExampleIconAll",
     "DtExampleIconDefault",
     "DtExampleIndicatorDefault",

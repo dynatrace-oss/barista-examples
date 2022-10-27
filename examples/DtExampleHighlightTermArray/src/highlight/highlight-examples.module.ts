@@ -16,13 +16,13 @@
 import { NgModule } from '@angular/core';
 import { DtHighlightModule } from '@dynatrace/barista-components/highlight';
 import { DtInputModule } from '@dynatrace/barista-components/input';
-import { DtExampleHighlightCaseSensitive } from './highlight-case-sensitive-example/highlight-case-sensitive-example';
+import { DtExampleHighlightTermArray } from './highlight-term-array-example/highlight-term-array-example';
 @NgModule({
     imports: [DtInputModule, DtHighlightModule],
     declarations: [
-        DtExampleHighlightCaseSensitive,
+        DtExampleHighlightTermArray,
     ],
-    exports: [DtExampleHighlightCaseSensitive]
+    exports: [DtExampleHighlightTermArray]
 })
 export class DtHighlightExamplesModule {
 }

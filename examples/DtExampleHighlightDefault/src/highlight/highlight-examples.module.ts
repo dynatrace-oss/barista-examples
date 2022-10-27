@@ -19,7 +19,9 @@ import { DtInputModule } from '@dynatrace/barista-components/input';
 import { DtExampleHighlightDefault } from './highlight-default-example/highlight-default-example';
 @NgModule({
     imports: [DtInputModule, DtHighlightModule],
-    declarations: [DtExampleHighlightDefault],
+    declarations: [
+        DtExampleHighlightDefault,
+    ],
     exports: [DtExampleHighlightDefault]
 })
 export class DtHighlightExamplesModule {
