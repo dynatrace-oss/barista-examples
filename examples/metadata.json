@@ -303,6 +303,7 @@
     "DtExampleTagInteractive",
     "DtExampleTagKey",
     "DtExampleTagListWithTagAdd",
+    "DtExampleOverrideLabelsTag",
     "DtExampleTagRemovable",
     "DtExampleTileCritical",
     "DtExampleTileDefault",
