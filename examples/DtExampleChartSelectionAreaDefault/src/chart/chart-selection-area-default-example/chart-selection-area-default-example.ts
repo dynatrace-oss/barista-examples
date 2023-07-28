@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2021 Dynatrace LLC
+ * Copyright 2022 Dynatrace LLC
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -14,13 +14,9 @@
  * limitations under the License.
  */
 
-// tslint:disable no-magic-numbers
+// eslint-disable  no-magic-numbers
 import { Component } from '@angular/core';
 import { generateData } from '../chart-data-utils';
-import {
-  DtChartOptions,
-  DtChartSeries,
-} from '@dynatrace/barista-components/chart';
 
 @Component({
   selector: 'dt-example-chart-selection-area-default',
@@ -28,7 +24,6 @@ import {
 })
 export class DtExampleChartSelectionAreaDefault {
   validRange = false;
-
   rangeValidChanges(valid: boolean): void {
     this.validRange = valid;
   }
@@ -42,7 +37,7 @@ export class DtExampleChartSelectionAreaDefault {
   }
 
   /** Chart options and series */
-  options: DtChartOptions = {
+  options: Highcharts.Options = {
     xAxis: {
       type: 'datetime',
     },
@@ -74,7 +69,7 @@ export class DtExampleChartSelectionAreaDefault {
       },
     },
   };
-  series: DtChartSeries[] = [
+  series: Highcharts.SeriesOptionsType[] = [
     {
       name: 'Requests',
       type: 'column',

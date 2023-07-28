@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2021 Dynatrace LLC
+ * Copyright 2022 Dynatrace LLC
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-// tslint:disable:no-magic-numbers
+/* eslint-disable no-magic-numbers */
 
 import { Component } from '@angular/core';
 import { formatCount } from '@dynatrace/barista-components/formatters';
+import { SeriesLineOptions } from 'highcharts';
 import { generateData } from '../data';
-import { DtMicroChartSeries } from '@dynatrace/barista-components/micro-chart';
 
 @Component({
   selector: 'dt-example-micro-chart-default',
   templateUrl: 'micro-chart-default-example.html',
 })
 export class DtExampleMicroChartDefault {
-  series: DtMicroChartSeries = {
+  series: SeriesLineOptions = {
     type: 'line',
     name: 'Requests',
     data: generateData(40, 1000, 2000, 1370304000000, 900000),

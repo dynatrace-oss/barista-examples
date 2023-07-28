@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2021 Dynatrace LLC
+ * Copyright 2022 Dynatrace LLC
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -27,11 +27,13 @@ import {
   TimeInterval,
 } from '@dynatrace/barista-components/stacked-series-chart';
 
+// eslint-disable-next-line no-shadow
 enum TimeIntervalKey {
   fiveMin,
   halfHour,
   hour,
 }
+// eslint-disable-next-line no-shadow
 enum DataKey {
   conversionBounces,
   histogramThirtyMin,
@@ -43,6 +45,7 @@ const conversionBouncesMap = ({ origin }) => {
   return new Date(0, 0, 0, hours, minutes, 0, 0);
 };
 const histogramMap = ({ origin }) => new Date(origin.timeDate);
+
 @Component({
   selector: 'dt-example-stacked-series-chart-date-barista',
   templateUrl: './stacked-series-chart-date-example.html',

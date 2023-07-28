@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2021 Dynatrace LLC
+ * Copyright 2022 Dynatrace LLC
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -14,20 +14,16 @@
  * limitations under the License.
  */
 
-// tslint:disable:no-magic-numbers
+/* eslint-disable no-magic-numbers */
 
 import { Component } from '@angular/core';
-import {
-  DtChartOptions,
-  DtChartSeries,
-} from '@dynatrace/barista-components/chart';
 
 @Component({
   selector: 'dt-example-chart-donut',
   templateUrl: 'chart-donut-example.html',
 })
 export class DtExampleChartDonut {
-  options: DtChartOptions = {
+  options: Highcharts.Options = {
     chart: {
       type: 'pie',
       plotBorderWidth: 0,
@@ -49,7 +45,7 @@ export class DtExampleChartDonut {
       },
     },
   };
-  series: DtChartSeries[] = [
+  series: Highcharts.SeriesPieOptions[] = [
     {
       type: 'pie',
       data: [

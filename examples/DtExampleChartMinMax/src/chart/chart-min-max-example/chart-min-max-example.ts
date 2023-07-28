@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2021 Dynatrace LLC
+ * Copyright 2022 Dynatrace LLC
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -14,15 +14,11 @@
  * limitations under the License.
  */
 
-// tslint:disable:no-magic-numbers
+/* eslint-disable no-magic-numbers */
 
 import { Component } from '@angular/core';
 
 import { generateAreaRangeData, generateData } from '../chart-data-utils';
-import {
-  DtChartOptions,
-  DtChartSeries,
-} from '@dynatrace/barista-components/chart';
 
 @Component({
   selector: 'dt-example-chart-min-max',
@@ -37,7 +33,7 @@ export class DtExampleChartMinMax {
     900000,
   );
 
-  options: DtChartOptions = {
+  options: Highcharts.Options = {
     xAxis: {
       type: 'datetime',
     },
@@ -58,7 +54,7 @@ export class DtExampleChartMinMax {
       },
     },
   };
-  series: DtChartSeries[] = [
+  series: Highcharts.SeriesOptionsType[] = [
     {
       name: 'Bar 1',
       type: 'column',
@@ -73,7 +69,7 @@ export class DtExampleChartMinMax {
       // types do not match up with the currently barista-supported version
       // of Highcharts.
       lineWidth: 0,
-    } as DtChartSeries,
+    } as Highcharts.SeriesOptionsType,
     {
       name: 'Line 1',
       type: 'line',

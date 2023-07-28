@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2021 Dynatrace LLC
+ * Copyright 2022 Dynatrace LLC
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -19,8 +19,6 @@ import {
   DtChartTooltipData,
   DT_CHART_TOOLTIP_CONFIG,
   DtPlotBackgroundInfo,
-  DtChartSeries,
-  DtChartOptions,
 } from '@dynatrace/barista-components/chart';
 import { Component } from '@angular/core';
 
@@ -51,7 +49,7 @@ const customTooltipConfig: DtChartTooltipConfig = {
   positionFunction: getTooltipPosition,
 };
 
-// tslint:disable:no-magic-numbers
+/* eslint-disable no-magic-numbers */
 
 @Component({
   selector: 'dt-example-chart-bar',
@@ -61,7 +59,7 @@ const customTooltipConfig: DtChartTooltipConfig = {
   ],
 })
 export class DtExampleChartBar {
-  options: DtChartOptions = {
+  options: Highcharts.Options = {
     chart: {
       type: 'bar',
     },
@@ -96,7 +94,7 @@ export class DtExampleChartBar {
       },
     },
   };
-  series: DtChartSeries[] = [
+  series: Highcharts.SeriesBarOptions[] = [
     {
       type: 'bar',
       name: 'Metric',

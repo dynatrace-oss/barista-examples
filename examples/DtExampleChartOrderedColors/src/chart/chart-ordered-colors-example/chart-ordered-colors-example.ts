@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2021 Dynatrace LLC
+ * Copyright 2022 Dynatrace LLC
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -14,22 +14,18 @@
  * limitations under the License.
  */
 
-// tslint:disable:no-magic-numbers
+/* eslint-disable no-magic-numbers */
 
 import { Component } from '@angular/core';
 
 import { generateData } from '../chart-data-utils';
-import {
-  DtChartOptions,
-  DtChartSeries,
-} from '@dynatrace/barista-components/chart';
 
 @Component({
   selector: 'dt-example-chart-ordered-colors',
   templateUrl: 'chart-ordered-colors-example.html',
 })
 export class DtExampleChartOrderedColors {
-  options: DtChartOptions = {
+  options: Highcharts.Options = {
     xAxis: {
       type: 'datetime',
     },
@@ -62,7 +58,7 @@ export class DtExampleChartOrderedColors {
     },
   };
 
-  series: DtChartSeries[] = [
+  series: Highcharts.SeriesOptionsType[] = [
     {
       name: 'Requests',
       type: 'column',
@@ -88,4 +84,4 @@ export class DtExampleChartOrderedColors {
   ];
 }
 
-// tslint:enable:no-magic-numbers
+/* eslint-enable no-magic-numbers */

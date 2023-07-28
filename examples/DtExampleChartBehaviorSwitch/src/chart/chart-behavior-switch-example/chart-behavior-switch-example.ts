@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2021 Dynatrace LLC
+ * Copyright 2022 Dynatrace LLC
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -16,17 +16,13 @@
 
 import { Component } from '@angular/core';
 import { generateData } from '../chart-data-utils';
-import {
-  DtChartOptions,
-  DtChartSeries,
-} from '@dynatrace/barista-components/chart';
 
 @Component({
   selector: 'dt-example-chart-behavior-switch',
   templateUrl: 'chart-behavior-switch-example.html',
 })
 export class DtExampleChartBehaviorSwitch {
-  options: DtChartOptions = {
+  options: Highcharts.Options = {
     xAxis: {
       type: 'datetime',
     },
@@ -59,7 +55,7 @@ export class DtExampleChartBehaviorSwitch {
     },
   };
 
-  cpuUsageSeries: DtChartSeries[] = [
+  cpuUsageSeries: Highcharts.SeriesOptionsType[] = [
     {
       name: 'CPU usage',
       type: 'line',
@@ -75,7 +71,7 @@ export class DtExampleChartBehaviorSwitch {
     },
   ];
 
-  retransmissionSeries: DtChartSeries[] = [
+  retransmissionSeries: Highcharts.SeriesOptionsType[] = [
     {
       name: 'Number of retransmissions',
       type: 'column',
@@ -91,7 +87,7 @@ export class DtExampleChartBehaviorSwitch {
     },
   ];
 
-  connectivitySeries: DtChartSeries[] = [
+  connectivitySeries: Highcharts.SeriesOptionsType[] = [
     {
       name: 'Network utilization',
       type: 'area',
@@ -108,7 +104,7 @@ export class DtExampleChartBehaviorSwitch {
   ];
 
   // Initialize chart series
-  series: DtChartSeries[] = this.cpuUsageSeries;
+  series: Highcharts.SeriesOptionsType[] = this.cpuUsageSeries;
 
   switchMetric(event: any): void {
     switch (event) {

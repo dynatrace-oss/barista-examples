@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2021 Dynatrace LLC
+ * Copyright 2022 Dynatrace LLC
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -14,24 +14,22 @@
  * limitations under the License.
  */
 
-// tslint:disable:no-magic-numbers
+/* eslint-disable no-magic-numbers */
 
 import { Component } from '@angular/core';
 
-import { generateData } from '../chart-data-utils';
-
+import { DtChartSeries } from '@dynatrace/barista-components/chart';
 import { DtColors } from '@dynatrace/barista-components/theming';
-import {
-  DtChartOptions,
-  DtChartSeries,
-} from '@dynatrace/barista-components/chart';
+
+import { generateData } from '../chart-data-utils';
+import { SeriesLineOptions } from 'highcharts';
 
 @Component({
   selector: 'dt-example-chart-loading',
   templateUrl: 'chart-loading-example.html',
 })
 export class DtExampleChartLoading {
-  options: DtChartOptions = {
+  options: Highcharts.Options = {
     xAxis: {
       type: 'datetime',
     },
@@ -49,7 +47,7 @@ export class DtExampleChartLoading {
   series: DtChartSeries[] | null;
 
   toggleData(): void {
-    const dummyData: DtChartSeries[] = [
+    const dummyData: SeriesLineOptions[] = [
       {
         name: 'Failure rate',
         type: 'line',
@@ -61,4 +59,4 @@ export class DtExampleChartLoading {
   }
 }
 
-// tslint:enable:no-magic-numbers
+/* eslint-enable no-magic-numbers */

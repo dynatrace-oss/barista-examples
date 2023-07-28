@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2021 Dynatrace LLC
+ * Copyright 2022 Dynatrace LLC
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -14,29 +14,28 @@
  * limitations under the License.
  */
 
-// tslint:disable:no-magic-numbers
+/* eslint-disable no-magic-numbers */
 
 import { Component } from '@angular/core';
 import { Observable, timer } from 'rxjs';
 import { map } from 'rxjs/operators';
 
+import { DtChartOptions } from '@dynatrace/barista-components/chart';
+
 import { generateData } from '../data';
-import {
-  DtMicroChartOptions,
-  DtMicroChartSeries,
-} from '@dynatrace/barista-components/micro-chart';
+import { SeriesOptionsType } from 'highcharts';
 
 @Component({
   selector: 'dt-example-micro-chart-stream',
   templateUrl: 'micro-chart-stream-example.html',
 })
 export class DtExampleMicroChartStream {
-  options: DtMicroChartOptions = {
+  options: DtChartOptions = {
     chart: {
       type: 'column',
     },
   };
-  series$: Observable<DtMicroChartSeries> = timer(1000, 5000).pipe(
+  series$: Observable<SeriesOptionsType> = timer(1000, 5000).pipe(
     map(() => ({
       name: 'Requests',
       type: 'column',

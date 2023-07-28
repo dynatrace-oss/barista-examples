@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2021 Dynatrace LLC
+ * Copyright 2022 Dynatrace LLC
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -15,14 +15,13 @@
  */
 
 import { Component } from '@angular/core';
-import { DtChartOptions } from '@dynatrace/barista-components/chart';
 
 @Component({
   selector: 'dt-example-chart-single-data-point',
   templateUrl: 'chart-single-data-point-example.html',
 })
 export class DtExampleChartSinglePointData {
-  options: DtChartOptions = {
+  options: Highcharts.Options = {
     chart: {
       type: 'line',
     },
