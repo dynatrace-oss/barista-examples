@@ -14,7 +14,7 @@
     "@angular/router": "8.2.14",
     "@dynatrace/barista-components": "5.3.1",
     "@dynatrace/barista-fonts": "1.0.1",
-    "@dynatrace/barista-icons": "3.6.0",
+    "@dynatrace/barista-icons": "3.7.2",
     "@types/highcharts": "5.0.44",
     "core-js": "2.6.11",
     "d3-scale": "3.2.1",
